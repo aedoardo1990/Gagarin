@@ -26,7 +26,11 @@ data3 = hints.get_all_values()
 soviet_story = SHEET.worksheet('soviet_story')
 data4 = soviet_story.get_all_values()
 
+player_scores = SHEET.worksheet('player_scores')
+data5 = player_scores.get_all_values()
+
 print(data1)
 print(data2)
 print(data3)
 print(data4)
+print(data5)
