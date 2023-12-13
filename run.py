@@ -1,6 +1,7 @@
 import gspread
 from google.oauth2.service_account import Credentials
 import PIL.Image
+from colorama import Fore, Back, Style
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -39,8 +40,8 @@ print("please enter a name to start the quiz and revive our glorious past.\n")
 while True:
     username = input("")
     if not username:
-        print("Blank username is invalid. Please enter letters, numbers")
-        print("or combination of both as username.\n")
+        print(f"{Fore.RED}Blank username is invalid. Please enter letters, numbers")
+        print(f"or combination of both as username.\n{Fore.WHITE}")
         continue
     else:
         print("привет," + username + "!")
