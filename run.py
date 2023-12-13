@@ -32,13 +32,15 @@ data5 = player_scores.get_all_values()
 
 # Welcome message
 print("Hello and welcome to Soviet Union!\n")
-print("You are right, USSR is dead but it still lives in the memory of its today's nostalgic supporters\n")
-print("Do you want to be our comrade? If yes, please enter a name to start the quiz and revive our glorious past.\n")
+print("You are right, USSR is dead but it still lives in the memory of its")
+print("today's nostalgic supporters. Do you want to be our comrade? If yes,")
+print("please enter a name to start the quiz and revive our glorious past.\n")
 
 while True:
     username = input("")
     if not username:
-        print("Blank username is invalid. Please enter letters, numbers or combination of both as username.\n")
+        print("Blank username is invalid. Please enter letters, numbers")
+        print("or combination of both as username.\n")
         continue
     else:
         print("привет," + username + "!")
