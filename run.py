@@ -1,7 +1,5 @@
 import gspread
 from google.oauth2.service_account import Credentials
-from PIL import Image, ImageDraw, ImageFont
-import math
 from colorama import Fore, Back, Style
 
 SCOPE = [
@@ -45,6 +43,16 @@ while True:
         print(f"or combination of both as username.\n{Fore.WHITE}")
         continue
     else:
-        print("привет," + username + "!")
+        print("\nпривет," + username + "!")
         break
 
+print("\nDo you want to read the game rules? Y/N \n")
+
+while True:
+    rules = input("")
+    if rules == "Y":
+        print("\nHere are the instructions")
+    elif rules == "N":
+        print("\nLet's play!")
+    else:
+        print(f"\n{Fore.RED}Choice is invalid, please enter Y or N")
