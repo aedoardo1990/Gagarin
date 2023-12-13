@@ -50,12 +50,12 @@ print("\nDo you want to read the game rules? Y/N \n")
 
 while True:
     rules = input("")
-    if not rules:
-        print(f"\n{Fore.RED}Choice is invalid, please enter Y or N")
-        continue    
-    elif rules == "Y":
+    if rules == "Y":
         print("\nHere are the instructions")
         break
-    else rules == "N":
+    elif rules == "N":
         print("\nLet's play!")
         break
+    else:
+        print(f"\n{Fore.RED}Choice is invalid, please enter Y or N{Fore.WHITE}\n")
+        continue
