@@ -16,19 +16,19 @@ SHEET = GSPREAD_CLIENT.open('soviet_union_quiz')
 
 # retrieve cols worksheet & vals-https://github.com/Boiann/space-quiz/tree/main
 questions = SHEET.worksheet('questions')
-data1 = questions.get_all_values()
+question = questions.get_all_values()
 
 answers = SHEET.worksheet('answers')
-data2 = answers.get_all_values()
+answer = answers.get_all_values()
 
 hints = SHEET.worksheet('hints')
-data3 = hints.get_all_values()
+hint = hints.get_all_values()
 
 soviet_story = SHEET.worksheet('soviet_story')
-data4 = soviet_story.get_all_values()
+soviet_s = soviet_story.get_all_values()
 
 player_scores = SHEET.worksheet('player_scores')
-data5 = player_scores.get_all_values()
+score = player_scores.get_all_values()
 
 # map questions from Google Sheet - dictionary
 questions = {
@@ -45,17 +45,17 @@ answers = [
 ]
 
 # map hints from Google Sheet - dictionary
-hints = {
+hints_show = {
     hint[0][0],
     hint[1][0],
     hint[2][0]
 }
 
 # map soviet story from Google Sheet - dictionary
-soviet_stories = hints = {
-    story[0][0],
-    story[1][0],
-    story[2][0]
+soviet_stories = {
+    soviet_s[0][0],
+    soviet_s[1][0],
+    soviet_s[2][0]
 }
 
 # Welcome message
@@ -86,7 +86,7 @@ while True:
         print("★ If you want a Hint before choosing the answer, pls enter H\n")
         break
     elif rules == "N":
-        print("\nLet's play!")
+        print("\nLet's play!\n")
         break
     else:
         print(f"\n{Fore.RED}Choice is invalid, please enter Y or N{Fore.WHITE}\n")
@@ -96,3 +96,20 @@ def start_quiz():
     """
     Function starts the quiz
     """
+    questions_answered = []
+    correct_answers = 0
+    question_n = 0
+
+    for key in question[1]:
+        print(key)
+        for i in answer[question_n+1]:
+            print(i)
+        while True:
+            question_answered = input("\nEnter A, B or C:\n")
+            question_answered = question_answered.upper()
+            if question_answered not in ('A', 'B', 'C'):
+                print(f"\n{Fore.RED}Invalid input, enter A, B, C or H{Fore.WHITE}\n")
+            else:
+                break
+
+start_quiz()
