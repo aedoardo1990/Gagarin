@@ -32,9 +32,9 @@ score = player_scores.get_all_values()
 
 # map questions from Google Sheet - dictionary
 questions = {
-    question[0][0]: 'A',
-    question[1][0]: 'B',
-    question[2][0]: 'C'
+    question[1][0]: 'A',
+    question[2][0]: 'B',
+    question[3][0]: 'C'
 }
 
 # map answers from Google Sheet - list of lists
@@ -100,16 +100,18 @@ def start_quiz():
     correct_answers = 0
     question_n = 0
 
-    for key in question[1]:
+    for key in questions:
         print(key)
         for i in answer[question_n+1]:
             print(i)
         while True:
-            question_answered = input("\nEnter A, B or C:\n")
+            question_answered = input("\nEnter A, B or C:")
             question_answered = question_answered.upper()
             if question_answered not in ('A', 'B', 'C'):
                 print(f"\n{Fore.RED}Invalid input, enter A, B, C or H{Fore.WHITE}\n")
             else:
                 break
+
+        question_n += 1
 
 start_quiz()
