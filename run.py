@@ -22,7 +22,7 @@ answers = SHEET.worksheet('answers')
 answer = answers.get_all_values()
 
 hints = SHEET.worksheet('hints')
-hint = hints.get_all_values()
+hints = hints.get_all_values()
 
 soviet_story = SHEET.worksheet('soviet_story')
 soviet_s = soviet_story.get_all_values()
@@ -46,9 +46,9 @@ answers = [
 
 # map hints from Google Sheet - dictionary
 hints_show = {
-    hint[1][0],
-    hint[2][0],
-    hint[3][0]
+    hints[0][0],
+    hints[1][0],
+    hints[2][0]
 }
 
 # map soviet story from Google Sheet - dictionary
@@ -92,6 +92,7 @@ while True:
         print(f"\n{Fore.RED}Choice is invalid, please enter Y or N{Fore.WHITE}\n")
         continue
 
+
 def start_quiz():
     """
     Function starts the quiz
@@ -112,15 +113,17 @@ def start_quiz():
             if question_answered not in ('A', 'B', 'C', 'H'):
                 print(f"\n{Fore.RED}Invalid input, enter A, B, C, or H{Fore.WHITE}\n")
             elif question_answered == "H":
-                for hint in hints_show:
-                    print(f"{Fore.BLUE}{hint}{Fore.WHITE}")
-                    break 
+                for key in hints_show:
+                    if key == hints[question_n][0]:
+                        print(f"{Fore.BLUE}{key}{Fore.WHITE}")
+                        break
             else:
                 break
 
         question_n += 1
 
-def answer_check(correct_answer, question_answered):
+
+def answer_check(correct_reply, question_answered):
     """
     function to check if the answer is correct
     """
@@ -134,6 +137,8 @@ def answer_check(correct_answer, question_answered):
             return 0
             break
 
+
 start_quiz()
 
-answer_check(correct_answer, question_answered)
+
+answer_check()
