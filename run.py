@@ -46,9 +46,9 @@ answers = [
 
 # map hints from Google Sheet - dictionary
 hints_show = {
-    hint[0][0],
     hint[1][0],
-    hint[2][0]
+    hint[2][0],
+    hint[3][0]
 }
 
 # map soviet story from Google Sheet - dictionary
@@ -102,16 +102,38 @@ def start_quiz():
 
     for key in questions:
         print(key)
+
         for i in answer[question_n+1]:
             print(i)
+
         while True:
-            question_answered = input("\nEnter A, B or C:")
+            question_answered = input("\nEnter A, B, C or H:\n")
             question_answered = question_answered.upper()
-            if question_answered not in ('A', 'B', 'C'):
-                print(f"\n{Fore.RED}Invalid input, enter A, B, C or H{Fore.WHITE}\n")
+            if question_answered not in ('A', 'B', 'C', 'H'):
+                print(f"\n{Fore.RED}Invalid input, enter A, B, C, or H{Fore.WHITE}\n")
+            elif question_answered == "H":
+                for hint in hints_show:
+                    print(f"{Fore.BLUE}{hint}{Fore.WHITE}")
+                    break 
             else:
                 break
 
         question_n += 1
 
+def answer_check(correct_answer, question_answered):
+    """
+    function to check if the answer is correct
+    """
+    for value in questions:
+        if question_answered == value:
+            print("Correct товарищ, bravo!")
+            return 10
+            break
+        else:
+            print("That's incorrect...")
+            return 0
+            break
+
 start_quiz()
+
+answer_check(correct_answer, question_answered)
