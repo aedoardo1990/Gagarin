@@ -139,6 +139,7 @@ def start_quiz():
                 continue
 
         question_n += 1
+    print(f"\nYou got {correct_answers} points out of 30.")
 
 
 def answer_check(correct_reply, question_answered):
