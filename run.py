@@ -1,4 +1,4 @@
-import GSPREAD_CLIENT
+import gspread
 from google.oauth2.service_account import Credentials
 from colorama import Fore, Back, Style
 
@@ -123,7 +123,16 @@ def start_quiz():
 
         questions_answered.append(question_answered)
         correct_answers += answer_check(questions.get(key), question_answered)
-
+        reply = input("Do you want to know more about this topic?")
+        reply= reply.upper()
+        if reply == "Y":
+            for story in soviet_stories:
+                if story == soviet_s[question_n][0]:
+                    print(f"\n{Fore.GREEN}{story}{Fore.WHITE}\n")
+        elif reply == "N":
+            continue
+        else:
+            print(f"\n{Fore.RED}Invalid input, pls enter Y or N.{Fore.WHITE}\n")
         question_n += 1
 
 
