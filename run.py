@@ -32,9 +32,9 @@ score = player_scores.get_all_values()
 
 # map questions from Google Sheet - dictionary
 questions = {
-    question[1][0]: 'A',
-    question[2][0]: 'B',
-    question[3][0]: 'C'
+    question[0][0]: 'C',
+    question[1][0]: 'B',
+    question[2][0]: 'A'
 }
 
 # map answers from Google Sheet - list of lists
@@ -105,7 +105,7 @@ def start_quiz():
     for key in questions:
         print(key)
 
-        for i in answer[question_n+1]:
+        for i in answer[question_n]:
             print(i)
 
         while True:
@@ -121,6 +121,9 @@ def start_quiz():
             else:
                 break
 
+        questions_answered.append(question_answered)
+        correct_answers += answer_check(questions.get(key), question_answered)
+
         question_n += 1
 
 
@@ -128,18 +131,12 @@ def answer_check(correct_reply, question_answered):
     """
     function to check if the answer is correct
     """
-    for value in questions:
-        if question_answered == value:
-            print("Correct товарищ, bravo!")
-            return 10
-            break
-        else:
-            print("That's incorrect...")
-            return 0
-            break
+    if question_answered == correct_reply:
+        print("Correct товарищ, bravo!")
+        return 10
+    else:
+        print(f"That's incorrect...Correct answer was")
+        return 0
 
 
 start_quiz()
-
-
-answer_check()
