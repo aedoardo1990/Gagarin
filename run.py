@@ -124,15 +124,16 @@ def start_quiz():
         questions_answered.append(question_answered)
         correct_answers += answer_check(questions.get(key), question_answered)
         reply = input("Do you want to know more about this topic?\n")
-        reply= reply.upper()
+        reply = reply.upper()
         if reply == "Y":
             for story in soviet_stories:
                 if story == soviet_s[question_n][0]:
                     print(f"\n{Fore.GREEN}{story}{Fore.WHITE}\n")
         elif reply == "N":
-            continue
+            print("хорошо, пойдем!")
         else:
             print(f"\n{Fore.RED}Invalid input, pls enter Y or N.{Fore.WHITE}\n")
+
         question_n += 1
 
 
@@ -140,7 +141,6 @@ def answer_check(correct_reply, question_answered):
     """
     function to check if the answer is correct
     """
-    question_answered = question_answered.upper()
     if question_answered == correct_reply:
         print("Correct товарищ, bravo!\n")
         return 10
@@ -148,6 +148,10 @@ def answer_check(correct_reply, question_answered):
         print(f"That's incorrect...Correct answer was {correct_reply}.\n")
         return 0
 
+def soviet_notion():
+    """
+    function to know more about the answer
+    """
 
 def points_counter():
     """
