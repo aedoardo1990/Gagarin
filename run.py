@@ -1,4 +1,4 @@
-import gspread
+import GSPREAD_CLIENT
 from google.oauth2.service_account import Credentials
 from colorama import Fore, Back, Style
 
@@ -142,7 +142,6 @@ def soviet_notion():
     """
     function to know more about the answer
     """
-    if 
 
 def points_counter():
     """
