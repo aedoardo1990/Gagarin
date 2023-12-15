@@ -45,11 +45,11 @@ answers = [
 ]
 
 # map hints from Google Sheet - dictionary
-hints_show = {
+hints_show = [
     hints[0][0],
     hints[1][0],
     hints[2][0]
-}
+]
 
 # map soviet story from Google Sheet - dictionary
 soviet_stories = {
@@ -78,6 +78,7 @@ print("\nDo you want to read the game rules? Y/N \n")
 
 while True:
     rules = input("")
+    rules = rules.upper()
     if rules == "Y":
         print("\nHere are the instructions:\n")
         print("★ Choose the correct answer among the options A), B), C)")
