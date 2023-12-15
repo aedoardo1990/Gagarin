@@ -132,11 +132,22 @@ def answer_check(correct_reply, question_answered):
     function to check if the answer is correct
     """
     if question_answered == correct_reply:
-        print("Correct товарищ, bravo!")
+        print("Correct товарищ, bravo!\n")
         return 10
     else:
-        print(f"That's incorrect...Correct answer was")
+        print(f"That's incorrect...Correct answer was {correct_reply}.\n")
         return 0
+
+def soviet_notion():
+    """
+    function to know more about the answer
+    """
+    if 
+
+def points_counter():
+    """
+    function to count points
+    """
 
 
 start_quiz()
