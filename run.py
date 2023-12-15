@@ -114,9 +114,9 @@ def start_quiz():
             if question_answered not in ('A', 'B', 'C', 'H'):
                 print(f"\n{Fore.RED}Invalid input, enter A, B, C, or H{Fore.WHITE}\n")
             elif question_answered == "H":
-                for key in hints_show:
-                    if key == hints[question_n][0]:
-                        print(f"{Fore.BLUE}{key}{Fore.WHITE}")
+                for hint_choice in hints_show:
+                    if hint_choice == hints[question_n][0]:
+                        print(f"{Fore.BLUE}{hint_choice}{Fore.WHITE}")
                         break
             else:
                 break
