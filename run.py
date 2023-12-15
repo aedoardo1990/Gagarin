@@ -123,16 +123,20 @@ def start_quiz():
 
         questions_answered.append(question_answered)
         correct_answers += answer_check(questions.get(key), question_answered)
-        reply = input("Do you want to know more about this topic?\n")
-        reply = reply.upper()
-        if reply == "Y":
-            for story in soviet_stories:
-                if story == soviet_s[question_n][0]:
-                    print(f"\n{Fore.GREEN}{story}{Fore.WHITE}\n")
-        elif reply == "N":
-            print("хорошо, пойдем!")
-        else:
-            print(f"\n{Fore.RED}Invalid input, pls enter Y or N.{Fore.WHITE}\n")
+        while True:
+            reply = input("Do you want to know more about this topic?\n")
+            reply = reply.upper()
+            if reply == "Y":
+                for story in soviet_stories:
+                    if story == soviet_s[question_n][0]:
+                        print(f"\n{Fore.GREEN}{story}{Fore.WHITE}\n")
+                break        
+            elif reply == "N":
+                print("\nхорошо, пойдем!\n")
+                break
+            else:
+                print(f"\n{Fore.RED}Invalid input, pls enter Y or N.{Fore.WHITE}\n")
+                continue
 
         question_n += 1
 
