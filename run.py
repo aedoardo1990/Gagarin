@@ -3,6 +3,8 @@ from google.oauth2.service_account import Credentials
 from colorama import Fore, Back, Style
 from tabulate import tabulate
 from simple_colors import *
+from os import system, name
+from time import sleep
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -60,6 +62,14 @@ soviet_stories = {
     soviet_s[2][0]
 }
 
+# clear screen function - credits to https://www.geeksforgeeks.org/clear-screen-python/
+def clear():
+    """
+    Clear function to clear screen 
+    """
+    if name == 'nt':
+        _ = system('cls')
+
 # Welcome message
 print("Hello and welcome to Soviet Union!\n")
 print("You are right, USSR is dead but it still lives in the memory of its")
@@ -77,6 +87,7 @@ while True:
         break
 
 print("\nDo you want to read the game rules? Y/N \n")
+sleep(3)
 
 while True:
     rules = input("")
@@ -92,6 +103,8 @@ while True:
         break
     elif rules == "N":
         print("\nLet's play!\n")
+        sleep(3)
+        clear()
         break
     else:
         print(f"\n{Fore.RED}Choice is invalid, please enter Y or N{Fore.WHITE}\n")
@@ -134,9 +147,13 @@ def start_quiz():
                 for story in soviet_stories:
                     if story == soviet_s[question_n][0]:
                         print(f"\n{Fore.GREEN}{story}{Fore.WHITE}\n")
+                        sleep(3)
+                        clear()
                 break
             elif reply == "N":
                 print("\nхорошо, пойдем!\n")
+                sleep(3)
+                clear()
                 break
             else:
                 print(f"\n{Fore.RED}Invalid input, pls enter Y or N.{Fore.WHITE}\n")
@@ -145,6 +162,7 @@ def start_quiz():
         question_n += 1
     print(f"\nYou got {correct_answers} points out of 30.")
     return correct_answers
+    sleep(3)
 
 
 def answer_check(correct_reply, question_answered): # credits to https://github.com/mikyrenato/3rd_Project_Quiz_Game/blob/main/run.py
@@ -164,6 +182,7 @@ def points_counter(enter_scores): # credits to LoveSandwiches - Code Institute
     function to update worksheet with final scores
     """
     print("\nUpdating leaderboard...\n")
+    sleep(3)
     scores_worksheet = SHEET.worksheet("comrade_scores")
     scores_worksheet.append_row(enter_scores)
     print("Leaderboard updated successfully.\n")
@@ -196,16 +215,17 @@ def restart_game():
         restart = restart.upper()
         if restart == "Y":
             print("\nхорошо, поиграем еще!\n")
+            sleep(3)
             start_quiz()
             points_counter(correct_answers)
             leaderboard()
         elif restart == "N":
-            print("\nIt was nice having you among our comrades! Have a good day and life.\n")
+            print("\nIt was nice having you among our comrades! Have a good day and a good life.\n")
             break
         else:
             print(f"\n{Fore.RED}Input is invalid, pls enter Y or N.{Fore.WHITE}\n")
             continue
-
+ 
 
 enter_scores = start_quiz()
 correct_answers = [str(username),int(enter_scores)]
