@@ -161,7 +161,7 @@ def points_counter(enter_scores):
     """
     function to update worksheet with final scores
     """
-    print("Updating leaderboard...\n")
+    print("\nUpdating leaderboard...\n")
     scores_worksheet = SHEET.worksheet("player_scores")
     scores_worksheet.append_row(enter_scores)
     print("Leaderboard updated successfully.\n")
