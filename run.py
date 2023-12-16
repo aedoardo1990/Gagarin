@@ -2,6 +2,7 @@ import gspread
 from google.oauth2.service_account import Credentials
 from colorama import Fore, Back, Style
 from tabulate import tabulate
+from simple_colors import *
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -180,8 +181,10 @@ def leaderboard(): # credits to https://www.askpython.com/python-modules/tabulat
 
     score.sort(key=size, reverse=True)
 
-    table1 = tabulate(score)
-    print(tabulate(score[0:11],headers=['Comrade name', 'Comrade score'],tablefmt='fancy_grid', stralign='center'))
+    table = tabulate(score[0:11],headers=['Comrade name', 'Comrade score'],tablefmt='fancy_grid', stralign='center')
+    colored_table = green(table)
+
+    print(colored_table)
 
 enter_scores = start_quiz()
 correct_answers = [str(username),int(enter_scores)]
