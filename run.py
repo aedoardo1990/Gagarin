@@ -247,4 +247,6 @@ enter_scores = start_quiz()
 correct_answers = [str(username),int(enter_scores)]
 points_counter(correct_answers)
 leaderboard()
+sleep(2)
+clear()
 restart_game()
