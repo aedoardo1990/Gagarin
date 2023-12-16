@@ -195,6 +195,7 @@ def restart_game():
         restart = input("\nDo you want to play again? Enter Y or N\n")
         restart = restart.upper()
         if restart == "Y":
+            print("\nхорошо, поиграем еще!\n")
             start_quiz()
             points_counter(correct_answers)
             leaderboard()
@@ -211,9 +212,3 @@ correct_answers = [str(username),int(enter_scores)]
 points_counter(correct_answers)
 leaderboard()
 restart_game()
-
-
-
-
-
-    
