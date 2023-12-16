@@ -1,6 +1,7 @@
 import gspread
 from google.oauth2.service_account import Credentials
 from colorama import Fore, Back, Style
+from tabulate import tabulate
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -98,7 +99,7 @@ while True:
 
 def start_quiz():
     """
-    Function starts the quiz
+    Function starts and runs the quiz
     """
     questions_answered = []
     correct_answers = 0
@@ -145,7 +146,7 @@ def start_quiz():
     return correct_answers
 
 
-def answer_check(correct_reply, question_answered):
+def answer_check(correct_reply, question_answered): # credits to https://github.com/mikyrenato/3rd_Project_Quiz_Game/blob/main/run.py
     """
     function to check if the answer is correct and to calculate points
     """
@@ -157,7 +158,7 @@ def answer_check(correct_reply, question_answered):
         return 0
 
 
-def points_counter(enter_scores):
+def points_counter(enter_scores): # credits to LoveSandwiches - Code Institute
     """
     function to update worksheet with final scores
     """
@@ -166,9 +167,20 @@ def points_counter(enter_scores):
     scores_worksheet.append_row(enter_scores)
     print("Leaderboard updated successfully.\n")
 
+
+def leaderboard(): # credits to https://www.askpython.com/python-modules/tabulate-tables-in-python
+    """
+    function displayes final leaderboard with player and score
+    """
+    scores_worksheet = SHEET.worksheet("player_scores")
+    score = player_scores.get_all_values()
+    table1 = tabulate(score)
+    print(table1)
+
 enter_scores = start_quiz()
 correct_answers = [str(username),int(enter_scores)]
 points_counter(correct_answers)
+leaderboard()
 
 
-
+    
