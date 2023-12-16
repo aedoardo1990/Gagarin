@@ -197,6 +197,8 @@ def points_counter(enter_scores): # credits to LoveSandwiches - Code Institute
     scores_worksheet = SHEET.worksheet("comrade_scores")
     scores_worksheet.append_row(enter_scores)
     print("Leaderboard updated successfully.\n")
+    sleep(2)
+    clear()
 
 
 def leaderboard(): # credits to https://www.askpython.com/python-modules/tabulate-tables-in-python
