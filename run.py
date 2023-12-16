@@ -88,12 +88,12 @@ while True:
         continue
     else:
         print("\nпривет, товарищ " + username + "!")
-        sleep(3)
+        sleep(2)
         clear()
         break
 
 print("\nDo you want to read the game rules? Y/N \n")
-sleep(3)
+sleep(2)
 
 
 while True:
@@ -109,12 +109,12 @@ while True:
         print("  by entering Y after the choice has been made\n")
         enter = input("Press ENTER to continue...\n")
         enter = enter.upper()
-        sleep(3)
+        sleep(2)
         clear()
         break
     elif rules == "N":
         print("\nLet's play!\n")
-        sleep(3)
+        sleep(2)
         clear()
         break
     else:
@@ -158,12 +158,12 @@ def start_quiz():
                 for story in soviet_stories:
                     if story == soviet_s[question_n][0]:
                         print(f"\n{Fore.GREEN}{story}{Fore.WHITE}\n")
-                        sleep(3)
+                        sleep(2)
                         clear()
                 break
             elif reply == "N":
                 print("\nхорошо, пойдем!\n")
-                sleep(3)
+                sleep(2)
                 clear()
                 break
             else:
@@ -173,7 +173,7 @@ def start_quiz():
         question_n += 1
     print(f"\nYou got {correct_answers} points out of 30.")
     return correct_answers
-    sleep(3)
+    sleep(2)
 
 
 def answer_check(correct_reply, question_answered): # credits to https://github.com/mikyrenato/3rd_Project_Quiz_Game/blob/main/run.py
@@ -193,7 +193,7 @@ def points_counter(enter_scores): # credits to LoveSandwiches - Code Institute
     function to update worksheet with final scores
     """
     print("\nUpdating leaderboard...\n")
-    sleep(3)
+    sleep(2)
     scores_worksheet = SHEET.worksheet("comrade_scores")
     scores_worksheet.append_row(enter_scores)
     print("Leaderboard updated successfully.\n")
@@ -224,13 +224,15 @@ def restart_game():
     while True:
         restart = input("\nDo you want to play again? Enter Y or N\n")
         restart = restart.upper()
+        sleep(2)
+        clear()
         if restart == "Y":
             print("\nхорошо, поиграем еще!\n")
+            sleep(2)
+            clear()
             start_quiz()
             points_counter(correct_answers)
             leaderboard()
-            sleep(3)
-            clear()
         elif restart == "N":
             print("\nIt was nice having you among our comrades! Have a good day and a good life.\n")
             break
