@@ -217,6 +217,8 @@ def leaderboard(): # credits to https://www.askpython.com/python-modules/tabulat
     colored_table = green(table) # colored table - credits to https://stackoverflow.com/questions/76734963/colorama-not-working-with-tabulate-to-display-colored-output-in-python
 
     print(colored_table)
+    sleep(5)
+    clear()
 
 
 def restart_game():
@@ -247,6 +249,4 @@ enter_scores = start_quiz()
 correct_answers = [str(username),int(enter_scores)]
 points_counter(correct_answers)
 leaderboard()
-sleep(2)
-clear()
 restart_game()
