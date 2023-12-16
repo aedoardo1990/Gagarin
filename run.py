@@ -167,7 +167,7 @@ def points_counter(enter_scores):
     print("Leaderboard updated successfully.\n")
 
 enter_scores = start_quiz()
-correct_answers = [int(enter_scores)]
+correct_answers = [str(username),int(enter_scores)]
 points_counter(correct_answers)
 
 
