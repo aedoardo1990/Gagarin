@@ -174,8 +174,13 @@ def leaderboard(): # credits to https://www.askpython.com/python-modules/tabulat
     """
     scores_worksheet = SHEET.worksheet("player_scores")
     score = player_scores.get_all_values()
-    table1 = tabulate(score)
-    print(table1)
+
+    def size(dat):
+        return str(dat[1])
+
+    score.sort(key=size, reverse=True)
+
+    print(tabulate(score[0:11],headers=['Comrade Name', 'Comrade Score'],tablefmt='fancy_grid', stralign='center'))
 
 enter_scores = start_quiz()
 correct_answers = [str(username),int(enter_scores)]
