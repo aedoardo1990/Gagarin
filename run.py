@@ -28,8 +28,8 @@ hints = hints.get_all_values()
 soviet_story = SHEET.worksheet('soviet_story')
 soviet_s = soviet_story.get_all_values()
 
-player_scores = SHEET.worksheet('player_scores')
-score = player_scores.get_all_values()
+comrade_scores = SHEET.worksheet('comrade_scores')
+score = comrade_scores.get_all_values()
 
 # map questions from Google Sheet - dictionary
 questions = {
@@ -163,7 +163,7 @@ def points_counter(enter_scores): # credits to LoveSandwiches - Code Institute
     function to update worksheet with final scores
     """
     print("\nUpdating leaderboard...\n")
-    scores_worksheet = SHEET.worksheet("player_scores")
+    scores_worksheet = SHEET.worksheet("comrade_scores")
     scores_worksheet.append_row(enter_scores)
     print("Leaderboard updated successfully.\n")
 
@@ -172,15 +172,16 @@ def leaderboard(): # credits to https://www.askpython.com/python-modules/tabulat
     """
     function displayes final leaderboard with player and score
     """
-    scores_worksheet = SHEET.worksheet("player_scores")
-    score = player_scores.get_all_values()
+    scores_worksheet = SHEET.worksheet("comrade_scores")
+    score = comrade_scores.get_all_values()
 
     def size(dat):
         return str(dat[1])
 
     score.sort(key=size, reverse=True)
 
-    print(tabulate(score[0:11],headers=['Comrade Name', 'Comrade Score'],tablefmt='fancy_grid', stralign='center'))
+    table1 = tabulate(score)
+    print(tabulate(score[0:11],headers=['Comrade name', 'Comrade score'],tablefmt='fancy_grid', stralign='center'))
 
 enter_scores = start_quiz()
 correct_answers = [str(username),int(enter_scores)]
