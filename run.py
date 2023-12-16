@@ -67,16 +67,20 @@ def clear():
     """
     Clear function to clear screen 
     """
+    # for windows
     if name == 'nt':
         _ = system('cls')
+ 
+    # for mac and linux(here, os.name is 'posix')
+    else:
+        _ = system('clear')
 
 # Welcome message
-print("Hello and welcome to Soviet Union!\n")
-print("You are right, USSR is dead but it still lives in the memory of its")
-print("today's nostalgic supporters. Do you want to be our comrade? If yes,")
-print("please enter a name to start the quiz and revive our glorious past.\n")
-
 while True:
+    print("Hello and welcome to Soviet Union!\n")
+    print("You are right, USSR is dead but it still lives in the memory of its")
+    print("today's nostalgic supporters. Do you want to be our comrade? If yes,")
+    print("please enter a name to start the quiz and revive our glorious past.\n")
     username = input("")
     if not username:
         print(f"{Fore.RED}Blank username is invalid. Please enter letters, numbers")
@@ -84,6 +88,8 @@ while True:
         continue
     else:
         print("\nпривет, товарищ " + username + "!")
+        sleep(3)
+        clear()
         break
 
 print("\nDo you want to read the game rules? Y/N \n")
@@ -102,7 +108,6 @@ while True:
         print("  by entering Y after the choice has been made\n")
         enter = input("Press ENTER to continue...\n")
         enter = enter.upper()
-        sleep(3)
         break
     elif rules == "N":
         print("\nLet's play!\n")
@@ -206,7 +211,7 @@ def leaderboard(): # credits to https://www.askpython.com/python-modules/tabulat
     table = tabulate(score[0:11],headers=['Comrade name', 'Comrade score'],tablefmt='fancy_grid', stralign='center')
     colored_table = green(table) # colored table - credits to https://stackoverflow.com/questions/76734963/colorama-not-working-with-tabulate-to-display-colored-output-in-python
 
-    print(colored_table) 
+    print(colored_table)
 
 
 def restart_game():
@@ -218,7 +223,6 @@ def restart_game():
         restart = restart.upper()
         if restart == "Y":
             print("\nхорошо, поиграем еще!\n")
-            sleep(3)
             start_quiz()
             points_counter(correct_answers)
             leaderboard()
