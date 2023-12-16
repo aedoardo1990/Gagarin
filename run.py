@@ -95,6 +95,7 @@ while True:
 print("\nDo you want to read the game rules? Y/N \n")
 sleep(3)
 
+
 while True:
     rules = input("")
     rules = rules.upper()
@@ -108,6 +109,8 @@ while True:
         print("  by entering Y after the choice has been made\n")
         enter = input("Press ENTER to continue...\n")
         enter = enter.upper()
+        sleep(3)
+        clear()
         break
     elif rules == "N":
         print("\nLet's play!\n")
@@ -226,6 +229,8 @@ def restart_game():
             start_quiz()
             points_counter(correct_answers)
             leaderboard()
+            sleep(3)
+            clear()
         elif restart == "N":
             print("\nIt was nice having you among our comrades! Have a good day and a good life.\n")
             break
