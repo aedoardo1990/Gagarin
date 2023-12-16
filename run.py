@@ -84,7 +84,9 @@ while True:
         print("★ Choose the correct answer among the options A), B), C)")
         print("★ If the answer is correct you will receive 10 points")
         print("★ If the answer is incorrect you will receive 0 points")
-        print("★ If you want a Hint before choosing the answer, pls enter H\n")
+        print("★ If you want a Hint before choosing the answer, pls enter H")
+        print("★ You can get more information about each topic question")
+        print("  by entering Y after the choice has been made\n")
         break
     elif rules == "N":
         print("\nLet's play!\n")
@@ -130,7 +132,7 @@ def start_quiz():
                 for story in soviet_stories:
                     if story == soviet_s[question_n][0]:
                         print(f"\n{Fore.GREEN}{story}{Fore.WHITE}\n")
-                break        
+                break
             elif reply == "N":
                 print("\nхорошо, пойдем!\n")
                 break
@@ -140,11 +142,12 @@ def start_quiz():
 
         question_n += 1
     print(f"\nYou got {correct_answers} points out of 30.")
+    return correct_answers
 
 
 def answer_check(correct_reply, question_answered):
     """
-    function to check if the answer is correct
+    function to check if the answer is correct and to calculate points
     """
     if question_answered == correct_reply:
         print("Correct товарищ, bravo!\n")
@@ -153,15 +156,19 @@ def answer_check(correct_reply, question_answered):
         print(f"That's incorrect...Correct answer was {correct_reply}.\n")
         return 0
 
-def soviet_notion():
-    """
-    function to know more about the answer
-    """
 
-def points_counter():
+def points_counter(enter_scores):
     """
-    function to count points
+    function to update worksheet with final scores
     """
+    print("Updating leaderboard...\n")
+    scores_worksheet = SHEET.worksheet("player_scores")
+    scores_worksheet.append_row(enter_scores)
+    print("Leaderboard updated successfully.\n")
+
+enter_scores = start_quiz()
+correct_answers = [int(enter_scores)]
+points_counter(correct_answers)
 
 
-start_quiz()
+
