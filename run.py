@@ -182,14 +182,37 @@ def leaderboard(): # credits to https://www.askpython.com/python-modules/tabulat
     score.sort(key=size, reverse=True)
 
     table = tabulate(score[0:11],headers=['Comrade name', 'Comrade score'],tablefmt='fancy_grid', stralign='center')
-    colored_table = green(table)
+    colored_table = green(table) # colored table - credits to https://stackoverflow.com/questions/76734963/colorama-not-working-with-tabulate-to-display-colored-output-in-python
 
-    print(colored_table)
+    print(colored_table) 
+
+
+def restart_game():
+    """
+    function to restart the game
+    """
+    while True:
+        restart = input("\nDo you want to play again? Enter Y or N\n")
+        if restart == "Y":
+            start_quiz()
+            leaderboard()
+            break
+        elif restart == "N":
+            print("\nIt was nice having you among our comrades! Have a good day and life\n")
+            break
+        else:
+            print(f"\n{Fore.RED}Input is invalid, pls enter Y or N.{Fore.WHITE}\n")
+            continue
+
 
 enter_scores = start_quiz()
 correct_answers = [str(username),int(enter_scores)]
 points_counter(correct_answers)
 leaderboard()
+restart_game()
+
+
+
 
 
     
