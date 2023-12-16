@@ -100,6 +100,9 @@ while True:
         print("★ If you want a Hint before choosing the answer, pls enter H")
         print("★ You can get more information about each topic question")
         print("  by entering Y after the choice has been made\n")
+        enter = input("Press ENTER to continue...\n")
+        enter = enter.upper()
+        sleep(3)
         break
     elif rules == "N":
         print("\nLet's play!\n")
