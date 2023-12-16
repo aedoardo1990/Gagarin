@@ -193,12 +193,13 @@ def restart_game():
     """
     while True:
         restart = input("\nDo you want to play again? Enter Y or N\n")
+        restart = restart.upper()
         if restart == "Y":
             start_quiz()
+            points_counter(correct_answers)
             leaderboard()
-            break
         elif restart == "N":
-            print("\nIt was nice having you among our comrades! Have a good day and life\n")
+            print("\nIt was nice having you among our comrades! Have a good day and life.\n")
             break
         else:
             print(f"\n{Fore.RED}Input is invalid, pls enter Y or N.{Fore.WHITE}\n")
