@@ -81,7 +81,7 @@ def clear():
 # Welcome message
 while True:
     clear()
-    sleep(2)
+    sleep(1)
     print(art.INTRO)
     sleep(3)
     clear()
@@ -112,11 +112,11 @@ while True:
     clear()
     if rules == "Y":
         print("\nHere are the instructions:\n")
-        print("★ Choose the correct answer among the options A), B), C)")
-        print("★ If the answer is correct you will receive 10 points")
-        print("★ If the answer is incorrect you will receive 0 points")
-        print("★ If you want a Hint before choosing the answer, pls enter H")
-        print("★ You can get more information about each topic question")
+        print(f"{Fore.RED}★{Fore.WHITE} Choose the correct answer among the options A), B), C)")
+        print(f"{Fore.RED}★{Fore.WHITE} If the answer is correct you will receive 10 points")
+        print(f"{Fore.RED}★{Fore.WHITE} If the answer is incorrect you will receive 0 points")
+        print(f"{Fore.RED}★{Fore.WHITE} If you want a Hint before choosing the answer, pls enter H")
+        print(f"{Fore.RED}★{Fore.WHITE} You can get more information about each topic question")
         print("  by entering Y after the choice has been made\n")
         enter = input("Press ENTER to continue...\n")
         enter = enter.upper()
