@@ -83,7 +83,7 @@ while True:
     clear()
     sleep(1)
     print(art.GAGARIN)
-    sleep(3)
+    sleep(5)
     clear()
     print("Hello and welcome to Soviet Union!\n")
     print("You are right, USSR is dead but it still lives in the memory of its")
