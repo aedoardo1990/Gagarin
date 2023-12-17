@@ -80,12 +80,13 @@ def clear():
         _ = system('clear')
 
 
-def delprint(text="Type a string in",delay_time=.05):
+def delprint(text="Type a string in",delay_time=.05):  # credits to https://replit.com/talk/learn/The-Slow-Print/44741
     
     for character in text:
         sys.stdout.write(character)
         sys.stdout.flush()
         time.sleep(delay_time)
+    print()
 
 
 # Welcome message
@@ -108,12 +109,12 @@ while True:
         print(f"or combination of both as username.\n{Fore.WHITE}")
         continue
     else:
-        print("\nпривет, товарищ " + username + "!")
+        delprint("\nпривет, товарищ " + username + "!")
         sleep(2)
         clear()
         break
 
-print("\nDo you want to read the game rules? Y/N \n")
+delprint("\nDo you want to read the game rules? Y/N \n")
 
 while True:
     rules = input("")
@@ -121,19 +122,19 @@ while True:
     sleep(2)
     clear()
     if rules == "Y":
-        print("\nHere are the instructions:\n")
-        print(f"{Fore.RED}★{Fore.WHITE} Choose the correct answer among the options A), B), C)")
-        print(f"{Fore.RED}★{Fore.WHITE} If the answer is correct you will receive 10 points")
-        print(f"{Fore.RED}★{Fore.WHITE} If the answer is incorrect you will receive 0 points")
-        print(f"{Fore.RED}★{Fore.WHITE} If you want a Hint before choosing the answer, pls enter H")
-        print(f"{Fore.RED}★{Fore.WHITE} You can get more information about each topic question")
-        print("  by entering Y after the choice has been made\n")
+        delprint("\nHere are the instructions:\n")
+        delprint(f"{Fore.RED}★{Fore.WHITE} Choose the correct answer among the options A), B), C)")
+        delprint(f"{Fore.RED}★{Fore.WHITE} If the answer is correct you will receive 10 points")
+        delprint(f"{Fore.RED}★{Fore.WHITE} If the answer is incorrect you will receive 0 points")
+        delprint(f"{Fore.RED}★{Fore.WHITE} If you want a Hint before choosing the answer, pls enter H")
+        delprint(f"{Fore.RED}★{Fore.WHITE} You can get more information about each topic question")
+        delprint("  by entering Y after the choice has been made\n")
         enter = input("Press ENTER to continue...\n")
         enter = enter.upper()
         clear()
         break
     elif rules == "N":
-        print("\nLet's play!\n")
+        delprint("\nLet's play!\n")
         sleep(2)
         clear()
         break
@@ -151,10 +152,10 @@ def start_quiz():
     question_n = 0
 
     for key in questions:
-        print(key)
+        delprint(key)
 
         for i in answer[question_n]:
-            print(i)
+            delprint(i)
 
         while True:
             question_answered = input("\nEnter A, B, C or H:\n")
@@ -182,7 +183,7 @@ def start_quiz():
                         clear()
                 break
             elif reply == "N":
-                print("\nхорошо, поехали!\n")
+                delprint("\nхорошо, поехали!\n")
                 sleep(2)
                 clear()
                 break
@@ -191,7 +192,7 @@ def start_quiz():
                 continue
 
         question_n += 1
-    print(f"\nYou got {correct_answers} points out of 30.")
+    delprint(f"\nYou got {correct_answers} points out of 30.")
     return correct_answers
     sleep(2)
 
@@ -249,14 +250,14 @@ def restart_game():
         sleep(2)
         clear()
         if restart == "Y":
-            print("\nхорошо, поиграем еще!\n")
+            delprint("\nхорошо, поиграем еще!\n")
             sleep(2)
             clear()
             start_quiz()
             points_counter(correct_answers)
             leaderboard()
         elif restart == "N":
-            print("\nIt was nice having you among our comrades! Have a good day and a good life.\n")
+            delprint("\nIt was nice having you among our comrades! Have a good day and a good life.\n")
             break
         else:
             print(f"\n{Fore.RED}Input is invalid, pls enter Y or N.{Fore.WHITE}\n")
