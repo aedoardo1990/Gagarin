@@ -183,7 +183,7 @@ def answer_check(correct_reply, question_answered): # credits to https://github.
         print(f"{Fore.GREEN}Correct товарищ, bravo!🏅{Fore.WHITE}\n")
         return 10
     else:
-        print(f"{Fore.RED}That's incorrect...🤦Correct answer was {correct_reply}.{Fore.WHITE}\n")
+        print(f"{Fore.RED}That's incorrect...🤦 Correct answer was {correct_reply}.{Fore.WHITE}\n")
         return 0
 
 
