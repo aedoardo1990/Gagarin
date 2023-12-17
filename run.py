@@ -64,15 +64,16 @@ soviet_stories = {
     soviet_s[2][0]
 }
 
+
 # clear screen function - credits to https://www.geeksforgeeks.org/clear-screen-python/
 def clear():
     """
-    Clear function to clear screen 
+    Clear function to clear screen
     """
     # for windows
     if name == 'nt':
         _ = system('cls')
- 
+
     # for mac and linux(here, os.name is 'posix')
     else:
         _ = system('clear')
@@ -186,7 +187,7 @@ def start_quiz():
     sleep(2)
 
 
-def answer_check(correct_reply, question_answered): # credits to https://github.com/mikyrenato/3rd_Project_Quiz_Game/blob/main/run.py
+def answer_check(correct_reply, question_answered):  # credits to https://github.com/mikyrenato/3rd_Project_Quiz_Game/blob/main/run.py
     """
     function to check if the answer is correct and to calculate points
     """
@@ -194,11 +195,11 @@ def answer_check(correct_reply, question_answered): # credits to https://github.
         print(f"{Fore.GREEN}Correct товарищ, bravo!🏅{Fore.WHITE}\n")
         return 10
     else:
-        print(f"{Fore.RED}That's incorrect...🤦 Correct answer was {correct_reply}.{Fore.WHITE}\n")
+        print(f"{Fore.RED}That's incorrect...🤦  Correct answer was {correct_reply}.{Fore.WHITE}\n")
         return 0
 
 
-def points_counter(enter_scores): # credits to LoveSandwiches - Code Institute
+def points_counter(enter_scores):  # credits to LoveSandwiches - Code Institute
     """
     function to update worksheet with final scores
     """
@@ -211,7 +212,7 @@ def points_counter(enter_scores): # credits to LoveSandwiches - Code Institute
     clear()
 
 
-def leaderboard(): # credits to https://www.askpython.com/python-modules/tabulate-tables-in-python
+def leaderboard():  # credits to https://www.askpython.com/python-modules/tabulate-tables-in-python
     """
     function displayes final leaderboard with player and score
     """
@@ -224,7 +225,7 @@ def leaderboard(): # credits to https://www.askpython.com/python-modules/tabulat
     score.sort(key=size, reverse=True)
 
     table = tabulate(score[0:11], headers=['COMRADE NAME', 'COMRADE SCORE'], tablefmt='fancy_grid', stralign='center')
-    colored_table = green(table) # colored table - credits to https://stackoverflow.com/questions/76734963/colorama-not-working-with-tabulate-to-display-colored-output-in-python
+    colored_table = green(table)  # colored table - credits to https://stackoverflow.com/questions/76734963/colorama-not-working-with-tabulate-to-display-colored-output-in-python
 
     print(colored_table)
 
@@ -251,10 +252,10 @@ def restart_game():
         else:
             print(f"\n{Fore.RED}Input is invalid, pls enter Y or N.{Fore.WHITE}\n")
             continue
- 
+
 
 enter_scores = start_quiz()
-correct_answers = [str(username),int(enter_scores)]
+correct_answers = [str(username), int(enter_scores)]
 points_counter(correct_answers)
 leaderboard()
 restart_game()
