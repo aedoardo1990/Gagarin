@@ -143,7 +143,7 @@ def start_quiz():
             elif question_answered == "H":
                 for hint_choice in hints_show:
                     if hint_choice == hints[question_n][0]:
-                        print(f"{Fore.BLUE}{hint_choice}{Fore.WHITE}")
+                        print(f"{Fore.CYAN}{hint_choice}{Fore.WHITE}")
                         break
             else:
                 break
@@ -156,7 +156,7 @@ def start_quiz():
             if reply == "Y":
                 for story in soviet_stories:
                     if story == soviet_s[question_n][0]:
-                        print(f"\n{Fore.GREEN}{story}{Fore.WHITE}\n")
+                        print(f"\n{Fore.BLUE}{story}{Fore.WHITE}\n")
                         enter = input("Press ENTER to continue...\n")
                         clear()
                 break
@@ -180,10 +180,10 @@ def answer_check(correct_reply, question_answered): # credits to https://github.
     function to check if the answer is correct and to calculate points
     """
     if question_answered == correct_reply:
-        print("Correct товарищ, bravo!\n")
+        print(f"{Fore.GREEN}Correct товарищ, bravo!🏅{Fore.WHITE}\n")
         return 10
     else:
-        print(f"That's incorrect...Correct answer was {correct_reply}.\n")
+        print(f"{Fore.RED}That's incorrect...🤦Correct answer was {correct_reply}.{Fore.WHITE}\n")
         return 0
 
 
@@ -191,7 +191,7 @@ def points_counter(enter_scores): # credits to LoveSandwiches - Code Institute
     """
     function to update worksheet with final scores
     """
-    print("\nUpdating leaderboard...\n")
+    print("\nUpdating leaderboard... ⌛\n")
     sleep(2)
     scores_worksheet = SHEET.worksheet("comrade_scores")
     scores_worksheet.append_row(enter_scores)
