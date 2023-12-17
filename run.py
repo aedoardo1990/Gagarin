@@ -81,7 +81,10 @@ def clear():
 # Welcome message
 while True:
     clear()
-    sleep(1)
+    sleep(2)
+    print(soviet.INTRO)
+    clear()
+    sleep(3)
     print(art.GAGARIN)
     sleep(5)
     clear()
