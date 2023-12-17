@@ -78,16 +78,12 @@ def clear():
         _ = system('clear')
 
 
-# Intro Image 
-art.GAGARIN = colored(art.GAGARIN)
-
-
 # Welcome message
 while True:
     clear()
     sleep(1)
     print(art.GAGARIN)
-    sleep(1)
+    sleep(3)
     clear()
     print("Hello and welcome to Soviet Union!\n")
     print("You are right, USSR is dead but it still lives in the memory of its")
