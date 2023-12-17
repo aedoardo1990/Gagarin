@@ -84,8 +84,8 @@ def delprint(text="Type a string in",delay_time=.05):  # credits to https://repl
     """
     function to delay printing time
     """ 
-  for character in text:      
-    sys.stdout.write(character) 
+  for character in text:
+    sys.stdout.write(character)
     sys.stdout.flush()
     time.sleep(delay_time)
 
