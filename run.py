@@ -94,11 +94,12 @@ while True:
 
 print("\nDo you want to read the game rules? Y/N \n")
 sleep(2)
-
+clear()
 
 while True:
     rules = input("")
     rules = rules.upper()
+
     if rules == "Y":
         print("\nHere are the instructions:\n")
         print("★ Choose the correct answer among the options A), B), C)")
@@ -109,7 +110,6 @@ while True:
         print("  by entering Y after the choice has been made\n")
         enter = input("Press ENTER to continue...\n")
         enter = enter.upper()
-        sleep(2)
         clear()
         break
     elif rules == "N":
@@ -158,7 +158,7 @@ def start_quiz():
                 for story in soviet_stories:
                     if story == soviet_s[question_n][0]:
                         print(f"\n{Fore.GREEN}{story}{Fore.WHITE}\n")
-                        sleep(2)
+                        enter = input("Press ENTER to continue...\n")
                         clear()
                 break
             elif reply == "N":
