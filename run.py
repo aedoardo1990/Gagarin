@@ -172,7 +172,7 @@ def start_quiz():
                         clear()
                 break
             elif reply == "N":
-                print("\nхорошо, Поехали!\n")
+                print("\nхорошо, поехали!\n")
                 sleep(2)
                 clear()
                 break
