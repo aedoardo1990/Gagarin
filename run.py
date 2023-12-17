@@ -80,14 +80,12 @@ def clear():
         _ = system('clear')
 
 
-def delprint(text="Type a string in",delay_time=.05):  # credits to https://replit.com/talk/learn/The-Slow-Print/44741
-    """
-    function to delay printing time
-    """ 
-  for character in text:
-    sys.stdout.write(character)
-    sys.stdout.flush()
-    time.sleep(delay_time)
+def delprint(text="Type a string in",delay_time=.05):
+    
+    for character in text:
+        sys.stdout.write(character)
+        sys.stdout.flush()
+        time.sleep(delay_time)
 
 
 # Welcome message
