@@ -6,6 +6,7 @@ from simple_colors import *
 from os import system, name
 from time import sleep
 import art
+import sys,time
 
 
 SCOPE = [
@@ -79,6 +80,16 @@ def clear():
         _ = system('clear')
 
 
+def delprint(text="Type a string in",delay_time=.05):  # credits to https://replit.com/talk/learn/The-Slow-Print/44741
+    """
+    function to delay printing time
+    """ 
+  for character in text:      
+    sys.stdout.write(character) 
+    sys.stdout.flush()
+    time.sleep(delay_time)
+
+
 # Welcome message
 while True:
     clear()
@@ -87,12 +98,12 @@ while True:
     sleep(3)
     clear()
     print(art.GAGARIN)
-    sleep(5)
+    sleep(3)
     clear()
-    print("Hello and welcome to Soviet Union!\n")
-    print("You are right, USSR is dead but it still lives in the memory of its")
-    print("today's nostalgic supporters. Do you want to be our comrade? If yes,")
-    print("please enter a name to start the quiz and revive our glorious past.\n")
+    delprint("Hello and welcome to Soviet Union!\n")
+    delprint("You are right, USSR is dead but it still lives in the memory of its")
+    delprint("today's nostalgic supporters. Do you want to be our comrade? If yes,")
+    delprint("please enter a name to start the quiz and revive our glorious past.\n")
     username = input("")
     if not username:
         print(f"{Fore.RED}Blank username is invalid. Please enter letters, numbers")
