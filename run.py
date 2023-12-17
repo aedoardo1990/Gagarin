@@ -80,8 +80,10 @@ def clear():
         _ = system('clear')
 
 
-def delprint(text="Type a string in",delay_time=.05):  # credits to https://replit.com/talk/learn/The-Slow-Print/44741
-    
+def delprint(text="Type a string in",delay_time=.03):  # credits to https://replit.com/talk/learn/The-Slow-Print/44741
+    """
+    function to print time slower
+    """
     for character in text:
         sys.stdout.write(character)
         sys.stdout.flush()
@@ -93,10 +95,12 @@ def delprint(text="Type a string in",delay_time=.05):  # credits to https://repl
 while True:
     clear()
     sleep(1)
-    print(art.INTRO)
+    colored_intro = red(art.INTRO)
+    delprint(colored_intro)
     sleep(3)
     clear()
-    print(art.GAGARIN)
+    colored_gagarin = blue(art.GAGARIN)
+    delprint(colored_gagarin)
     sleep(3)
     clear()
     delprint("Hello and welcome to Soviet Union!\n")
