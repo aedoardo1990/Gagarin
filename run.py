@@ -6,7 +6,6 @@ from simple_colors import *
 from os import system, name
 from time import sleep
 import art
-from termcolor import colored, cprint
 
 
 SCOPE = [
