@@ -93,13 +93,12 @@ while True:
         break
 
 print("\nDo you want to read the game rules? Y/N \n")
-sleep(2)
-clear()
 
 while True:
     rules = input("")
     rules = rules.upper()
-
+    sleep(2)
+    clear()
     if rules == "Y":
         print("\nHere are the instructions:\n")
         print("★ Choose the correct answer among the options A), B), C)")
