@@ -5,6 +5,9 @@ from tabulate import tabulate
 from simple_colors import *
 from os import system, name
 from time import sleep
+import art
+from termcolor import colored, cprint
+
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -75,8 +78,18 @@ def clear():
     else:
         _ = system('clear')
 
+
+# Intro Image 
+art.GAGARIN = colored(art.GAGARIN)
+
+
 # Welcome message
 while True:
+    clear()
+    sleep(1)
+    print(art.GAGARIN)
+    sleep(1)
+    clear()
     print("Hello and welcome to Soviet Union!\n")
     print("You are right, USSR is dead but it still lives in the memory of its")
     print("today's nostalgic supporters. Do you want to be our comrade? If yes,")
