@@ -103,7 +103,7 @@ while True:
     delprint(colored_gagarin, delay_time=0.01)
     sleep(3)
     clear()
-    delprint("Hello and welcome to Soviet Union!\n")
+    delprint(f"Hello and welcome to Soviet Union!{Fore.RED}★{Fore.WHITE}\n")
     delprint("You are right, USSR is dead but it still lives in the memory of its")
     delprint("today's nostalgic supporters. Do you want to be our comrade? If yes,")
     delprint("please enter a name to start the quiz and revive our glorious past.\n")
