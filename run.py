@@ -82,7 +82,7 @@ def clear():
 while True:
     clear()
     sleep(2)
-    print(soviet.INTRO)
+    print(art.INTRO)
     clear()
     sleep(3)
     print(art.GAGARIN)
