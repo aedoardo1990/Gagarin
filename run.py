@@ -99,7 +99,7 @@ while True:
     print(colored_intro)
     sleep(3)
     clear()
-    colored_gagarin = blue(art.GAGARIN)
+    colored_gagarin = red(art.GAGARIN)
     delprint(colored_gagarin, delay_time=0.01)
     sleep(3)
     clear()
