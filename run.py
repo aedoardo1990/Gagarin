@@ -177,13 +177,14 @@ def start_quiz():
         questions_answered.append(question_answered)
         correct_answers += answer_check(questions.get(key), question_answered)
         while True:
-            reply = input("Do you want to know more about this topic?\n")
+            reply = input("Do you want to know more about this topic? Y/N\n")
             reply = reply.upper()
             if reply == "Y":
                 for story in soviet_stories:
                     if story == soviet_s[question_n][0]:
                         print(f"\n{Fore.BLUE}{story}{Fore.WHITE}\n")
-                        enter = input("Press ENTER to continue...\n")
+                        delprint("\nLoading next question...\n")
+                        sleep(3)
                         clear()
                 break
             elif reply == "N":
