@@ -110,7 +110,7 @@ while True:
     username = input("")
     if not username:
         print(f"{Fore.RED}Blank username is invalid. Please enter letters, numbers")
-        print(f"or combination of both as username.\n{Fore.WHITE}")
+        print(f"or a combination of both as username.\n{Fore.WHITE}")
         continue
     else:
         delprint("\nпривет, товарищ " + username + "!")
@@ -133,8 +133,9 @@ while True:
         delprint(f"{Fore.RED}★{Fore.WHITE} If you want a Hint before choosing the answer, pls enter H")
         delprint(f"{Fore.RED}★{Fore.WHITE} You can get more information about each topic question")
         delprint("  by entering Y after the choice has been made\n")
-        enter = input("Press ENTER to continue...\n")
-        enter = enter.upper()
+        sleep(1)
+        delprint("\nLet's play!\n")
+        sleep(2)
         clear()
         break
     elif rules == "N":
@@ -169,7 +170,7 @@ def start_quiz():
             elif question_answered == "H":
                 for hint_choice in hints_show:
                     if hint_choice == hints[question_n][0]:
-                        print(f"{Fore.CYAN}{hint_choice}{Fore.WHITE}")
+                        print(f"{Fore.BLUE}{hint_choice}{Fore.WHITE}")
                         break
             else:
                 break
@@ -182,7 +183,7 @@ def start_quiz():
             if reply == "Y":
                 for story in soviet_stories:
                     if story == soviet_s[question_n][0]:
-                        print(f"\n{Fore.BLUE}{story}{Fore.WHITE}\n")
+                        print(f"\n{Fore.CYAN}{story}{Fore.WHITE}\n")
                         delprint("\nLoading next question...\n")
                         sleep(3)
                         clear()
