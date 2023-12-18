@@ -97,9 +97,16 @@ def delprint(text="Type a string in", delay_time=.03):
 star = "★"
 rs = red(star)
 
-# Red invalid input - to reduce line code of line 182
+
+# Red invalid input - to reduce line code
 invalid_input = "Invalid input, enter A, B, C, or H"
 inv_input = red(invalid_input)
+
+
+# Red invalid input (2) - to reduce line code
+invalid_input = "Invalid input, pls enter Y or N."
+inv_input_2 = red(invalid_input)
+
 
 # Welcome message
 clear()
@@ -207,7 +214,7 @@ def start_quiz():
                 clear()
                 break
             else:
-                print(f"\n{Fore.RED}Invalid input, pls enter Y or N.{Fore.WHITE}\n")
+                print("\n" + inv_input_2+ "\n")
                 continue
 
         question_n += 1
