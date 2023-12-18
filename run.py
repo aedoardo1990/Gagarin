@@ -115,7 +115,6 @@ soviet_stories = {
 }
 
 
-
 # credits to https://www.geeksforgeeks.org/clear-screen-python/
 def clear():
     """
