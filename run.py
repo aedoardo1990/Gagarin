@@ -239,7 +239,7 @@ def leaderboard():  # credits to https://www.askpython.com/python-modules/tabula
     score.sort(key=size, reverse=True)
 
     table = tabulate(score[0:11], headers=['COMRADE NAME', 'COMRADE SCORE'], tablefmt='fancy_grid', stralign='center')
-    colored_table = green(table)  # colored table - credits to https://stackoverflow.com/questions/76734963/colorama-not-working-with-tabulate-to-display-colored-output-in-python
+    colored_table = red(table)  # colored table - credits to https://stackoverflow.com/questions/76734963/colorama-not-working-with-tabulate-to-display-colored-output-in-python
 
     print(colored_table)
 
