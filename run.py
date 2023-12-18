@@ -290,7 +290,7 @@ def restart_game():
             leaderboard()
         elif restart == "N":
             delprint("\nIt was nice having you among our comrades!")
-            delprint("Have a good day and a good life.\n")
+            delprint("\nHave a good day and a good life.\n")
             break
         else:
             print("\n" + inv_input_2 + "\n")
