@@ -92,21 +92,23 @@ def delprint(text="Type a string in", delay_time=.03):  # credits to https://rep
 
 
 # Welcome message
+clear()
+sleep(1)
+colored_intro = red(art.INTRO)
+print(colored_intro)
+sleep(3)
+clear()
+colored_gagarin = red(art.GAGARIN)
+delprint(colored_gagarin, delay_time=0.01)
+sleep(3)
+clear()
+delprint(f"Hello and welcome to Soviet Union!{Fore.RED}★{Fore.WHITE}\n")
+delprint("You are right, USSR is dead but it still lives in the memory of its")
+delprint("today's nostalgic supporters. Do you want to be our comrade? If yes,")
+delprint("please enter a name to start the quiz and revive our glorious past.\n")
+
+# While loop for username
 while True:
-    clear()
-    sleep(1)
-    colored_intro = red(art.INTRO)
-    print(colored_intro)
-    sleep(3)
-    clear()
-    colored_gagarin = red(art.GAGARIN)
-    delprint(colored_gagarin, delay_time=0.01)
-    sleep(3)
-    clear()
-    delprint(f"Hello and welcome to Soviet Union!{Fore.RED}★{Fore.WHITE}\n")
-    delprint("You are right, USSR is dead but it still lives in the memory of its")
-    delprint("today's nostalgic supporters. Do you want to be our comrade? If yes,")
-    delprint("please enter a name to start the quiz and revive our glorious past.\n")
     username = input("")
     if not username:
         print(f"{Fore.RED}Blank username is invalid. Please enter letters, numbers")
