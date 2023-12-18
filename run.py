@@ -93,6 +93,10 @@ def delprint(text="Type a string in", delay_time=.03):
     print()
 
 
+# Red Star Icon
+star = "★"
+rs = red(star)
+
 # Welcome message
 clear()
 sleep(1)
@@ -104,9 +108,9 @@ colored_gagarin = red(art.GAGARIN)
 delprint(colored_gagarin, delay_time=0.01)
 sleep(3)
 clear()
-delprint(f"Hello and welcome to Soviet Union!{Fore.RED}★{Fore.WHITE}\n")
-delprint("You are right, USSR is dead but it still lives in the memory of its")
-delprint("today's nostalgic supporters. Do you want to be our comrade?")
+delprint("Hello and welcome to Soviet Union!" + rs + "\n")
+delprint("You are right, USSR is dead but it still lives in the memory of")
+delprint("its today's nostalgic supporters. Do you want to be our comrade?")
 delprint("If yes, please enter a name to start the quiz and revive our")
 delprint("glorious past.\n")
 
@@ -132,11 +136,11 @@ while True:
         sleep(2)
         clear()
         delprint("\nHere are the instructions:\n")
-        delprint(f"{Fore.RED}★{Fore.WHITE} Choose the correct answer among the options A), B), C)")
-        delprint(f"{Fore.RED}★{Fore.WHITE} If the answer is correct you will receive 10 points")
-        delprint(f"{Fore.RED}★{Fore.WHITE} If the answer is incorrect you will receive 0 points")
-        delprint(f"{Fore.RED}★{Fore.WHITE} If you want a Hint before choosing the answer, pls enter H")
-        delprint(f"{Fore.RED}★{Fore.WHITE} You can get more information about each topic question")
+        delprint(rs + " Choose the correct answer among the options A), B), C)")
+        delprint(rs + " If the answer is correct you will receive 10 points")
+        delprint(rs + " If the answer is incorrect you will receive 0 points")
+        delprint(rs + " If you want a Hint before choosing the answer, pls enter H")
+        delprint(rs + " You can get more information about each topic question")
         delprint("  by entering Y after the choice has been made\n")
         sleep(1)
         delprint("\nLet's play!\n")
