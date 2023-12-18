@@ -44,7 +44,12 @@ questions = {
     question[1][0]: 'B',
     question[2][0]: 'A',
     question[3][0]: 'B',
-    question[4][0]: 'A'
+    question[4][0]: 'A',
+    question[5][0]: 'C',
+    question[6][0]: 'A',
+    question[7][0]: 'C',
+    question[8][0]: 'B',
+    question[9][0]: 'C',
 }
 
 # map answers from Google Sheet - list of lists
@@ -53,7 +58,12 @@ answers = [
     [answer[1][0], answer[1][1], answer[1][2]],
     [answer[2][0], answer[2][1], answer[2][2]],
     [answer[3][0], answer[3][1], answer[3][2]],
-    [answer[4][0], answer[4][1], answer[4][2]]
+    [answer[4][0], answer[4][1], answer[4][2]],
+    [answer[5][0], answer[5][1], answer[5][2]],
+    [answer[6][0], answer[6][1], answer[6][2]],
+    [answer[7][0], answer[7][1], answer[7][2]],
+    [answer[8][0], answer[8][1], answer[8][2]],
+    [answer[9][0], answer[9][1], answer[9][2]]
 ]
 
 # map hints from Google Sheet - dictionary
@@ -62,7 +72,12 @@ hints_show = [
     hints[1][0],
     hints[2][0],
     hints[3][0],
-    hints[4][0]
+    hints[4][0],
+    hints[5][0],
+    hints[6][0],
+    hints[7][0],
+    hints[8][0],
+    hints[9][0]
 ]
 
 # map soviet story from Google Sheet - dictionary
@@ -72,6 +87,11 @@ soviet_stories = {
     soviet_s[2][0],
     soviet_s[3][0],
     soviet_s[4][0]
+    soviet_s[5][0],
+    soviet_s[6][0],
+    soviet_s[7][0],
+    soviet_s[8][0],
+    soviet_s[9][0]
 }
 
 
