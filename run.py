@@ -252,8 +252,8 @@ def start_quiz():
                 for story in soviet_stories:
                     if story == soviet_s[question_n][0]:
                         print(f"\n{Fore.CYAN}{story}{Fore.WHITE}\n")
-                        delprint("\nLoading next question...\n")
-                        sleep(3)
+                        input("\nPress ENTER for the next question\n")
+                        sleep(1)
                         clear()
                 break
             elif reply == "N":
