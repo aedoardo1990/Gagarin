@@ -214,7 +214,7 @@ def start_quiz():
                 clear()
                 break
             else:
-                print("\n" + inv_input_2+ "\n")
+                print("\n" + inv_input_2 + "\n")
                 continue
 
         question_n += 1
@@ -223,7 +223,8 @@ def start_quiz():
     sleep(2)
 
 
-# credits to https://github.com/mikyrenato/3rd_Project_Quiz_Game/blob/main/run.py
+# credits to https://github.com/mikyrenato/3rd_Project_Quiz_Game/blob/
+# main/run.py
 def answer_check(correct_reply, question_answered):
     """
     function to check if the answer is correct and to calculate points
@@ -232,7 +233,8 @@ def answer_check(correct_reply, question_answered):
         print(f"{Fore.GREEN}Correct товарищ, bravo!🏅{Fore.WHITE}\n")
         return 10
     else:
-        print(f"{Fore.RED}That's incorrect...🤦  Correct answer was {correct_reply}.{Fore.WHITE}\n")
+        print(f"\n{Fore.RED}That's incorrect...🤦\n")
+        print(f"Correct answer was {correct_reply}.{Fore.WHITE}\n")
         return 0
 
 
@@ -250,7 +252,8 @@ def points_counter(enter_scores):
     clear()
 
 
-def leaderboard():  # credits to https://www.askpython.com/python-modules/tabulate-tables-in-python
+# credits to https://www.askpython.com/python-modules/tabulate-tables-in-python
+def leaderboard():
     """
     function displayes final leaderboard with player and score
     """
@@ -286,11 +289,11 @@ def restart_game():
             points_counter(correct_answers)
             leaderboard()
         elif restart == "N":
-            delprint("\nIt was nice having you among our comrades! Have a good day")
-            delprint("and a good life.\n")
+            delprint("\nIt was nice having you among our comrades!")
+            delprint("Have a good day and a good life.\n")
             break
         else:
-            print(f"\n{Fore.RED}Input is invalid, pls enter Y or N.{Fore.WHITE}\n")
+            print("\n" + inv_input_2 + "\n")
             continue
 
 
