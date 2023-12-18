@@ -6,7 +6,7 @@ from simple_colors import *
 from os import system, name
 from time import sleep
 import art
-import sys,time
+import sys, time
 
 
 SCOPE = [
@@ -80,7 +80,7 @@ def clear():
         _ = system('clear')
 
 
-def delprint(text="Type a string in",delay_time=.03):  # credits to https://replit.com/talk/learn/The-Slow-Print/44741
+def delprint(text="Type a string in", delay_time=.03):  # credits to https://replit.com/talk/learn/The-Slow-Print/44741
     """
     function to print time slower
     """
