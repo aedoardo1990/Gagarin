@@ -50,6 +50,11 @@ questions = {
     question[7][0]: 'C',
     question[8][0]: 'B',
     question[9][0]: 'C',
+    question[10][0]: 'C',
+    question[11][0]: 'B',
+    question[12][0]: 'A',
+    question[13][0]: 'B',
+    question[14][0]: 'C',
 }
 
 # map answers from Google Sheet - list of lists
@@ -63,7 +68,12 @@ answers = [
     [answer[6][0], answer[6][1], answer[6][2]],
     [answer[7][0], answer[7][1], answer[7][2]],
     [answer[8][0], answer[8][1], answer[8][2]],
-    [answer[9][0], answer[9][1], answer[9][2]]
+    [answer[9][0], answer[9][1], answer[9][2]],
+    [answer[10][0], answer[10][1], answer[10][2]],
+    [answer[11][0], answer[11][1], answer[11][2]],
+    [answer[12][0], answer[12][1], answer[12][2]],
+    [answer[13][0], answer[13][1], answer[13][2]],
+    [answer[14][0], answer[14][1], answer[14][2]]
 ]
 
 # map hints from Google Sheet - dictionary
@@ -77,7 +87,12 @@ hints_show = [
     hints[6][0],
     hints[7][0],
     hints[8][0],
-    hints[9][0]
+    hints[9][0],
+    hints[10][0],
+    hints[11][0],
+    hints[12][0],
+    hints[13][0],
+    hints[14][0]
 ]
 
 # map soviet story from Google Sheet - dictionary
@@ -91,8 +106,14 @@ soviet_stories = {
     soviet_s[6][0],
     soviet_s[7][0],
     soviet_s[8][0],
-    soviet_s[9][0]
+    soviet_s[9][0],
+    soviet_s[10][0],
+    soviet_s[11][0],
+    soviet_s[12][0],
+    soviet_s[13][0],
+    soviet_s[14][0]
 }
+
 
 
 # credits to https://www.geeksforgeeks.org/clear-screen-python/
@@ -246,7 +267,7 @@ def start_quiz():
                 continue
 
         question_n += 1
-    delprint(f"\nYou got {correct_answers} points out of 30.")
+    delprint(f"\nYou got {correct_answers} points out of 150.")
     return correct_answers
     sleep(2)
 
