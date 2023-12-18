@@ -93,9 +93,13 @@ def delprint(text="Type a string in", delay_time=.03):
     print()
 
 
-# Red Star Icon
+# Red Star Icon - to reduce line code
 star = "★"
 rs = red(star)
+
+# Red invalid input - to reduce line code of line 182
+invalid_input = "Invalid input, enter A, B, C, or H"
+inv_input = red(invalid_input)
 
 # Welcome message
 clear()
@@ -175,7 +179,7 @@ def start_quiz():
             question_answered = input("\nEnter A, B, C or H:\n")
             question_answered = question_answered.upper()
             if question_answered not in ('A', 'B', 'C', 'H'):
-                print(f"\n{Fore.RED}Invalid input, enter A, B, C, or H{Fore.WHITE}\n")
+                print("\n" + inv_input + "\n")
             elif question_answered == "H":
                 for hint_choice in hints_show:
                     if hint_choice == hints[question_n][0]:
