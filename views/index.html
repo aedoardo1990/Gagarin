@@ -23,11 +23,38 @@
 
     <main>
         <div>
-            <a id="background-img" href="https://imgur.com/iFRFGLq"><img src="https://i.imgur.com/iFRFGLq.jpg" alt="background image cosmonaut" /></a>
+            <a href="https://imgur.com/iFRFGLq"><img src="https://i.imgur.com/iFRFGLq.jpg" alt="background image" /></a>
         </div>
-    </main>
+    
+    <!-- Button -->
     <button onclick="window.location.reload()">Run Game</button>
+
+    <!-- Terminal -->
     <div id="terminal"></div>
+
+    <script>
+        var term = new Terminal({
+            cols: 80,
+            rows: 24
+        });
+        term.open(document.getElementById('terminal'));
+        term.writeln('Running startup command: python3 run.py');
+        term.writeln('');
+
+        var ws = new WebSocket(location.protocol.replace('http', 'ws') + '//' + location.hostname + (location.port ? (
+            ':' + location.port) : '') + '/');
+
+        ws.onopen = function () {
+            new attach.attach(term, ws);
+        };
+
+        ws.onerror = function (e) {
+            console.log(e);
+        };
+        // Set focus in the terminal
+        document.getElementsByClassName("xterm-helper-textarea")[0].focus();
+    </script>
+    </main>  
 
     <!-- Footer -->
     <footer>
@@ -54,28 +81,6 @@
             </li>
     </footer>
 
-    <script>
-        var term = new Terminal({
-            cols: 80,
-            rows: 24
-        });
-        term.open(document.getElementById('terminal'));
-        term.writeln('Running startup command: python3 run.py');
-        term.writeln('');
-
-        var ws = new WebSocket(location.protocol.replace('http', 'ws') + '//' + location.hostname + (location.port ? (
-            ':' + location.port) : '') + '/');
-
-        ws.onopen = function () {
-            new attach.attach(term, ws);
-        };
-
-        ws.onerror = function (e) {
-            console.log(e);
-        };
-        // Set focus in the terminal
-        document.getElementsByClassName("xterm-helper-textarea")[0].focus();
-    </script>
       <!--Font Awesome Kit-->
   <script src="https://kit.fontawesome.com/4f92087d19.js" crossorigin="anonymous"></script>
 </body>
