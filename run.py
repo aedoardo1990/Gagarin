@@ -123,9 +123,9 @@ delprint("\nDo you want to read the game rules? Y/N \n")
 while True:
     rules = input("")
     rules = rules.upper()
-    sleep(2)
-    clear()
     if rules == "Y":
+        sleep(2)
+        clear()
         delprint("\nHere are the instructions:\n")
         delprint(f"{Fore.RED}★{Fore.WHITE} Choose the correct answer among the options A), B), C)")
         delprint(f"{Fore.RED}★{Fore.WHITE} If the answer is correct you will receive 10 points")
