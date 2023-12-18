@@ -42,28 +42,36 @@ score = comrade_scores.get_all_values()
 questions = {
     question[0][0]: 'C',
     question[1][0]: 'B',
-    question[2][0]: 'A'
+    question[2][0]: 'A',
+    question[3][0]: 'B',
+    question[4][0]: 'A'
 }
 
 # map answers from Google Sheet - list of lists
 answers = [
     [answer[0][0], answer[0][1], answer[0][2]],
     [answer[1][0], answer[1][1], answer[1][2]],
-    [answer[2][0], answer[2][1], answer[2][2]]
+    [answer[2][0], answer[2][1], answer[2][2]],
+    [answer[3][0], answer[3][1], answer[3][2]],
+    [answer[4][0], answer[4][1], answer[4][2]]
 ]
 
 # map hints from Google Sheet - dictionary
 hints_show = [
     hints[0][0],
     hints[1][0],
-    hints[2][0]
+    hints[2][0],
+    hints[3][0],
+    hints[4][0]
 ]
 
 # map soviet story from Google Sheet - dictionary
 soviet_stories = {
     soviet_s[0][0],
     soviet_s[1][0],
-    soviet_s[2][0]
+    soviet_s[2][0],
+    soviet_s[3][0],
+    soviet_s[4][0]
 }
 
 
