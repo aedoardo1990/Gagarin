@@ -101,7 +101,7 @@ soviet_stories = {
     soviet_s[1][0],
     soviet_s[2][0],
     soviet_s[3][0],
-    soviet_s[4][0]
+    soviet_s[4][0],
     soviet_s[5][0],
     soviet_s[6][0],
     soviet_s[7][0],
