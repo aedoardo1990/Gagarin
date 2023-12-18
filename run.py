@@ -6,7 +6,8 @@ from simple_colors import *
 from os import system, name
 from time import sleep
 import art
-import sys, time
+import sys
+import time
 
 
 SCOPE = [
@@ -66,7 +67,7 @@ soviet_stories = {
 }
 
 
-# clear screen function - credits to https://www.geeksforgeeks.org/clear-screen-python/
+# credits to https://www.geeksforgeeks.org/clear-screen-python/
 def clear():
     """
     Clear function to clear screen
@@ -80,7 +81,8 @@ def clear():
         _ = system('clear')
 
 
-def delprint(text="Type a string in", delay_time=.03):  # credits to https://replit.com/talk/learn/The-Slow-Print/44741
+# credits to https://replit.com/talk/learn/The-Slow-Print/44741
+def delprint(text="Type a string in", delay_time=.03):
     """
     function to print time slower
     """
@@ -104,15 +106,16 @@ sleep(3)
 clear()
 delprint(f"Hello and welcome to Soviet Union!{Fore.RED}★{Fore.WHITE}\n")
 delprint("You are right, USSR is dead but it still lives in the memory of its")
-delprint("today's nostalgic supporters. Do you want to be our comrade? If yes,")
-delprint("please enter a name to start the quiz and revive our glorious past.\n")
+delprint("today's nostalgic supporters. Do you want to be our comrade?")
+delprint("If yes, please enter a name to start the quiz and revive our")
+delprint("glorious past.\n")
 
-# While loop for username
+# While loop for valid player name
 while True:
     username = input("")
     if not username:
-        print(f"{Fore.RED}Blank username is invalid. Please enter letters, numbers")
-        print(f"or a combination of both as username.\n{Fore.WHITE}")
+        print(f"{Fore.RED}Blank username is invalid. Please enter letters,")
+        print(f"numbers or a combination of both as username.\n{Fore.WHITE}")
         continue
     else:
         delprint("\nпривет, товарищ " + username + "!")
@@ -146,7 +149,7 @@ while True:
         clear()
         break
     else:
-        print(f"\n{Fore.RED}Choice is invalid, please enter Y or N{Fore.WHITE}\n")
+        print(f"\n{Fore.RED}Choice is invalid, pls enter Y or N{Fore.WHITE}\n")
         continue
 
 
@@ -205,7 +208,8 @@ def start_quiz():
     sleep(2)
 
 
-def answer_check(correct_reply, question_answered):  # credits to https://github.com/mikyrenato/3rd_Project_Quiz_Game/blob/main/run.py
+# credits to https://github.com/mikyrenato/3rd_Project_Quiz_Game/blob/main/run.py
+def answer_check(correct_reply, question_answered):
     """
     function to check if the answer is correct and to calculate points
     """
@@ -217,7 +221,8 @@ def answer_check(correct_reply, question_answered):  # credits to https://github
         return 0
 
 
-def points_counter(enter_scores):  # credits to LoveSandwiches - Code Institute
+# credits to LoveSandwiches - Code Institute
+def points_counter(enter_scores):
     """
     function to update worksheet with final scores
     """
@@ -241,9 +246,9 @@ def leaderboard():  # credits to https://www.askpython.com/python-modules/tabula
         return str(dat[1])
 
     score.sort(key=size, reverse=True)
-
+    # colored table - credits to https://stackoverflow.com/questions/76734963/colorama-not-working-with-tabulate-to-display-colored-output-in-python
     table = tabulate(score[0:11], headers=['COMRADE NAME', 'COMRADE SCORE'], tablefmt='fancy_grid', stralign='center')
-    colored_table = red(table)  # colored table - credits to https://stackoverflow.com/questions/76734963/colorama-not-working-with-tabulate-to-display-colored-output-in-python
+    colored_table = red(table)
 
     print(colored_table)
 
@@ -265,7 +270,8 @@ def restart_game():
             points_counter(correct_answers)
             leaderboard()
         elif restart == "N":
-            delprint("\nIt was nice having you among our comrades! Have a good day and a good life.\n")
+            delprint("\nIt was nice having you among our comrades! Have a good day")
+            delprint("and a good life.\n")
             break
         else:
             print(f"\n{Fore.RED}Input is invalid, pls enter Y or N.{Fore.WHITE}\n")
