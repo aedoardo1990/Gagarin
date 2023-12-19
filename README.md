@@ -63,6 +63,9 @@ Red color is used as well for the 2 ASCII art images at the start of the quiz, f
 FOTO TO UPLOAD
 - In the second ASCII ART image there is Yuri Gagarin. By achieving the major milestone to be the first cosmonaut in space for Soviet Union amidst the Space Race, he became an international celebrity and was awarded many medals and titles, including the nation's highest distinction: Hero of the Soviet Union.
 FOTO TO UPLOAD
+- The favicon is another well known symbol of Soviet Union, which is the hammer and the sieckle. It represents the proletarian solidarity between agricultural and industrial workers. It was first adopted during the Russian Revolution at the end of World War I, the hammer representing workers and the sickle representing the peasants.
+
+<img src="assets/images/favicon.jpeg" height="140" width="150">
 
 ### Typography 
 
