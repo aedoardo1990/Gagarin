@@ -60,7 +60,15 @@ Red color is used as well for the 2 ASCII art images at the start of the quiz, f
 ### Imagery
 
 - The red star is one of the most famous symbols of USSR - its meaning is explained in one of the questions of the quiz, therefore no spoilers will be done here. Still today in Moscow, there are some state buildings with the red star on top.
-FOTO TO UPLOAD
+
+Red Star - Quiz Title
+
+![Red Star - Quiz Title](assets/images/readme/title_red_star.png)
+
+Red Star on top of the Kremlin in Moscow
+
+![Red Star Kremlin](assets/images/readme/red_star_kremlin.jpg)
+
 - In the second ASCII ART image there is Yuri Gagarin. By achieving the major milestone to be the first cosmonaut in space for Soviet Union amidst the Space Race, he became an international celebrity and was awarded many medals and titles, including the nation's highest distinction: Hero of the Soviet Union.
 FOTO TO UPLOAD
 - The favicon is another well known symbol of Soviet Union, which is the hammer and the sieckle. It represents the proletarian solidarity between agricultural and industrial workers. It was first adopted during the Russian Revolution at the end of World War I, the hammer representing workers and the sickle representing the peasants.
