@@ -122,6 +122,124 @@ The programm aims at providing the user with a simple and intuive multiple choic
 - offer the user with a short, entertaining and informative game
 
 
+## Features
+
+### Existing Features
+
+**Introduction ASCII Images**
+2 ASCII images are used at the very start of the game:
+
+1. Intro Image 
+
+<img src="assets/images/readme/intro_image_1.png" height="350" width="575">
+
+2. Gagarin Image 
+
+<img src="assets/images/readme/intro_image_2.png" height="350" width="575">
+
+
+**Introduction to the game and requirement to enter username**
+
+In the first text screen, there is a short welcome message and introduction to the game. The user is then immediately asked to enter a username. 
+
+PHOTO TO UPLOAD
+
+When the player will have submitted a username, he will get the below text in Russian. 
+
+<img src="" height="" width="">
+
+nпривет, товарищ () means "Hello, comrade". If you want to know how to pronounce it, please click <a href="https://www.google.com/search?q=translator&rlz=1C1ONGR_itDE1079DE1079&oq=tr&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIGCAEQRRg5MggIAhBFGCcYOzIGCAMQRRg8MgYIBBBFGDwyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQgxMDA5ajBqOagCALACAA&sourceid=chrome&ie=UTF-8" target="_blank" rel="noopener" aria-label="Check the Buran page of Wikipedia">here</a>. In the early years of Soviet power, the Bolsheviks used Tovarisch when addressing to people assumed sympathetic to the revolution and to the Soviet state, such as members of the Communist party and people from the "working masses". By the mid-1920s, the form of address Tovarisch became so commonplace in the Soviet Union that it was used indiscriminately in essentially the same way as terms like "Mister" and "Sir" are employed in English. That use persisted until the dissolution of the Soviet Union.
+
+The username entered by the user has to consist of numbers or letters. They can't enter a blank space. If they don't enter valid data, an error message will appear asking to submit a valid username.
+
+<img src="assets/images/readme/blank-username.png" height="150" width="575">
+
+
+**Game instructions**
+After the username is submitted, the user will be given the option to read or not the game instructions:
+- If Y is entered, the instructions will appear and after giving the time to go through all of them, the programm will automatically load the first quiz question. 
+
+<img src="assets/images/readme/game-rules.png" height="350" width="575">
+
+- If N is entered, the instructions will not be displayed and the programm will bring the user directly to the first question.
+
+- If the user enters another letter, symbol or number than Y/N, the programm will display an error message and prompt the user to enter the correct input. 
+
+PHOTO UPLOAD
+
+
+**Quiz questions**
+For each question the user will be given the option to select among A), B), C) or H):
+- H stands for Hint: by entering H the user will receive a hint that will help him to answer to the question. After the Hint is given, the player will be asked again to select among A), B), C) or H). If H is selected again, the H will re-appear.
+
+<img src="assets/images/readme/hint.png" height="350" width="575">
+
+- A), B), C) are the answers at disposal of the user. If the choice is correct, the player will receive the following message in green. 
+
+<img src="assets/images/readme/correct-answer.png" height="350" width="575">
+
+If the choice is incorrect, the player will get the below message in red, that will confirm as well which was the correct answer. 
+
+<img src="assets/images/readme/incorrect-answer.png" height="350" width="575">
+
+If the user will enter a letter, number or symbol different than A), B), C) or H), an error message will appear and the player will be asked to enter again a correct input. 
+
+<img src="assets/images/readme/question-invalid-input.png" height="350" width="575">
+
+
+**Additional information about each question's topic**
+After an answer to each question is given, the player will have the option to get or not additional information about the question's topic:
+- If Y is selected, the additional information about Soviet history or curiosities will appear. 
+
+<img src="assets/images/readme/add-information-option.png" height="350" width="575">
+
+- If N is selected, the programm will display again "хорошо, поехали" and go ahead with the next question. 
+
+<img src="assets/images/readme/add-information-option-no.png" height="350" width="575">
+
+The phrase in Russian "хорошо, поехали" means "Ok, let's go". "поехали" is linked to Yuri Gagarin, who said that at the start of the space trip, so you can find a lot of images of Gagarin with “Поехали!” in the internet. 
+
+Example of image og Gagarin with “Поехали!”
+<img src="assets/images/readme/paiehali.jpeg" height="600" width="375">
+
+- If the user will enter a letter, number or symbol different than Y or N, an error message will appear and the player will be asked to enter again a correct input. 
+
+<img src="assets/images/readme/add-information-option-invalid.png" height="350" width="575">
+
+**Final score and leaderboard**
+When all the 15 questions of the Quiz are answered, the player will get first a message with its score and then her/his score will be displayed on the leaderboard (if the performance is among the best 10 players), which will pop up immediately after. 
+
+Final Score
+
+<img src="assets/images/readme/final-score.png" height="150" width="575">
+
+Leaderboard with Final Score
+
+<img src="assets/images/readme/leaderboard.png" height="350" width="575">
+
+As it is mentioned in the instructions, 10 points are given for a correct answer and 0 for an incorrect one. 
+
+
+**Repeat game option**
+After the leaderboard has appeared, the user will be given the option to choose if to restart or not the game:
+- If the player enters Y, the game restarts. This time the instructions will be not displayed and the user will start the game directly from the 1st question. 
+
+<img src="" height="" width="">
+
+- If the player enters N, the game finishes and the following good-bye message will appear.
+
+<img src="assets/images/readme/goodbye-message.png" height="350" width="575">
+
+- If the user will enter a letter, number or symbol different than Y or N, an error message will appear and the player will be asked to enter again a correct input. 
+
+<img src="" height="" width="">
+
+
+
+
+
+
+
 ## Testing
 
 ### Testing User Stories (Functionality)
@@ -147,6 +265,15 @@ The programm aims at providing the user with a simple and intuive multiple choic
 | repeat the game as many times as I wish | can repeat the game endlessly |
 | have the choice to quit the game after finishing it | can quit the game after replying to all the questions |
 | get a good-bye message when quitting the game | get a good-bye message when I choose to quit the game |
+
+
+
+### Unfixed bugs
+
+#### Username input in Safari not working 
+The programm on Safari does not allow to input the username, therefore it is not possible to continue with the rest of the game. 
+
+PHOTO TO UPLOAD
 
 
 ## Deployment
