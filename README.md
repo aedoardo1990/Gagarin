@@ -139,6 +139,26 @@ The programm aims at providing the user with a simple and intuive multiple choic
 | get a good-bye message when quitting the game | get a good-bye message when I choose to quit the game |
 
 
+## Deployment
+
+This project was deployed with Heroku using Code Institute's mock terminal as provided with the Python Essentials template.
+
+To deploy:
+
+- Clone or fork this public repository
+- Create a Heroku account (if not already existing)
+- Create a new app with Heroku
+- In **Settings**, add 2 buildpacks:
+    - ```Python```
+    - ```NodeJS```
+    
+    Ensure the buildpacks are created in that order!
+
+- Allowing Heroku access to GitHub, link the new app to the relevant repository
+- Choose whether or not to enable **Automatic Deploys**. If enabled, the deployed app will update automatically with each push to GitHub
+- Click **Deploy**
+
+
 
 
 
