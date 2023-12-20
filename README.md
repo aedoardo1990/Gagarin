@@ -37,9 +37,9 @@ The link to our Live Website can be found here - [Soviet Union Quiz](https://sov
 
 ## Planning
 
-The project was firstly conceived through the creation of the following diagram. It was created with [lucidchart.com](https://www.lucidchart.com/). 
+The project was firstly conceived through the creation of the below diagram thanks to [lucidchart.com](https://www.lucidchart.com/). The diagram helped me to visualise the steps required for the game and which functions might be required to implement them.
 
-![Diagram](TO CORRECT AND UPLOAD PHOTO)
+![Diagram](assets/images/readme/diagram.png)
 
 
 ## Design
