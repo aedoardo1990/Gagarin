@@ -142,13 +142,13 @@ The programm aims at providing the user with a simple and intuive multiple choic
 
 In the first text screen, there is a short welcome message and introduction to the game. The user is then immediately asked to enter a username. 
 
-PHOTO TO UPLOAD
+<img src="assets/images/readme/intro-text.png" height="350" width="575">
 
 When the player will have submitted a username, he will get the below text in Russian. 
 
-<img src="" height="" width="">
+<img src="assets/images/readme/tovarish.png" height="150" width="575">
 
-nпривет, товарищ () means "Hello, comrade". If you want to know how to pronounce it, please click <a href="https://www.google.com/search?q=translator&rlz=1C1ONGR_itDE1079DE1079&oq=tr&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIGCAEQRRg5MggIAhBFGCcYOzIGCAMQRRg8MgYIBBBFGDwyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQgxMDA5ajBqOagCALACAA&sourceid=chrome&ie=UTF-8" target="_blank" rel="noopener" aria-label="Check the Buran page of Wikipedia">here</a>. In the early years of Soviet power, the Bolsheviks used Tovarisch when addressing to people assumed sympathetic to the revolution and to the Soviet state, such as members of the Communist party and people from the "working masses". By the mid-1920s, the form of address Tovarisch became so commonplace in the Soviet Union that it was used indiscriminately in essentially the same way as terms like "Mister" and "Sir" are employed in English. That use persisted until the dissolution of the Soviet Union.
+nпривет, товарищ () means "Hello, comrade". If you want to know how to pronounce it, please click <a href="https://www.google.com/search?q=translator&rlz=1C1ONGR_itDE1079DE1079&oq=tr&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIGCAEQRRg5MggIAhBFGCcYOzIGCAMQRRg8MgYIBBBFGDwyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQgxMDA5ajBqOagCALACAA&sourceid=chrome&ie=UTF-8" target="_blank" rel="noopener" aria-label="Check the pronunciation of nпривет, товарищ ">here</a>. In the early years of Soviet power, the Bolsheviks used Tovarisch when addressing to people assumed sympathetic to the revolution and to the Soviet state, such as members of the Communist party and people from the "working masses". By the mid-1920s, the form of address Tovarisch became so commonplace in the Soviet Union that it was used indiscriminately in essentially the same way as terms like "Mister" and "Sir" are employed in English. That use persisted until the dissolution of the Soviet Union.
 
 The username entered by the user has to consist of numbers or letters. They can't enter a blank space. If they don't enter valid data, an error message will appear asking to submit a valid username.
 
@@ -165,7 +165,7 @@ After the username is submitted, the user will be given the option to read or no
 
 - If the user enters another letter, symbol or number than Y/N, the programm will display an error message and prompt the user to enter the correct input. 
 
-PHOTO UPLOAD
+<img src="assets/images/readme/instructions-invalid.png" height="350" width="575">
 
 
 **Quiz questions**
@@ -197,7 +197,7 @@ After an answer to each question is given, the player will have the option to ge
 
 <img src="assets/images/readme/add-information-option-no.png" height="350" width="575">
 
-The phrase in Russian "хорошо, поехали" means "Ok, let's go". "поехали" is linked to Yuri Gagarin, who said that at the start of the space trip, so you can find a lot of images of Gagarin with “Поехали!” in the internet. 
+The phrase in Russian "хорошо, поехали" means "Ok, let's go". "поехали" is linked to Yuri Gagarin, who said that at the start of the space trip, so you can find a lot of images of Gagarin with “Поехали!” in the internet. If you want to know how to pronounce it, please click <a href="https://www.google.com/search?q=translator&rlz=1C1ONGR_itDE1079DE1079&oq=trans&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIJCAEQRRg5GIAEMgwIAhAjGCcYgAQYigUyDAgDEAAYQxiABBiKBTINCAQQABiDARixAxiABDIMCAUQABhDGIAEGIoFMgwIBhAAGEMYgAQYigUyEwgHEC4YgwEYxwEYsQMY0QMYgAQyDQgIEAAYgwEYsQMYgAQyBwgJEAAYgATSAQc5MDJqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" target="_blank" rel="noopener" aria-label="Check the pronunciation of хорошо, поехали">here</a>
 
 Example of image of Gagarin with “Поехали!”
 
@@ -225,20 +225,48 @@ As it is mentioned in the instructions, 10 points are given for a correct answer
 After the leaderboard has appeared, the user will be given the option to choose if to restart or not the game:
 - If the player enters Y, the game restarts. This time the instructions will be not displayed and the user will start the game directly from the 1st question. 
 
-<img src="" height="" width="">
-
 - If the player enters N, the game finishes and the following good-bye message will appear.
 
 <img src="assets/images/readme/goodbye-message.png" height="350" width="575">
 
 - If the user will enter a letter, number or symbol different than Y or N, an error message will appear and the player will be asked to enter again a correct input. 
 
-<img src="" height="" width="">
+<img src="assets/images/readme/restart-game-invalid.png" height="130" width="575">
 
+### Future Features 
 
+**Add images/videos to each question's topic**
 
+As above mentioned, when a question in the quiz is answered, the user has the option to read additional information about the question's topic. It would be great to add to these information as well images or videos related to them. 
 
+**Randomize the questions**
 
+For future developments of the programm, we would like to randomize the questions answers, so that the quiz would become more challenging for the user that wants to repeat it. 
+
+For instance the answers sections of the second question ("How many countries were part of Soviet Union?") is structured as follows:
+A) 17
+B) 15
+C) 13
+
+With the randomization, we could have for instance the following options when the quiz is running one or multiple times: A) 15, B)13, C)17 
+or 
+A) 13, B) 17, C) 15
+
+**Different levels of difficulty**
+
+It would be nice to add different levels of difficulty to choose from at the start of the game. Levels of difficulty would be divided accordingly: Beginner, Intermediate, Pro. The more difficult the level, the higher the number of questions. For instance, 15 questions for Beginner, 20 for Intermediate and 30 for Pro.
+
+**Music toggle**
+
+It would be nice to add a music toggle with the Anthem of Soviet Union or other famous Soviet songs, that the player could decide to switch on/off. This would help to recreate the atmosphere of the past glory of USSR.
+
+**Background image**
+
+Adding a background image around the terminal of the game, such as a map of the Soviet Union. 
+
+**Congratulation message for highest score**
+
+Adding a personalizes congratulation message if the user gets the highest possible score. 
 
 
 ## Testing
