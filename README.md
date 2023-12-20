@@ -199,8 +199,9 @@ After an answer to each question is given, the player will have the option to ge
 
 The phrase in Russian "хорошо, поехали" means "Ok, let's go". "поехали" is linked to Yuri Gagarin, who said that at the start of the space trip, so you can find a lot of images of Gagarin with “Поехали!” in the internet. 
 
-Example of image og Gagarin with “Поехали!”
-<img src="assets/images/readme/paiehali.jpeg" height="600" width="375">
+Example of image of Gagarin with “Поехали!”
+
+<img src="assets/images/readme/paiehali.jpeg" height="400" width="375">
 
 - If the user will enter a letter, number or symbol different than Y or N, an error message will appear and the player will be asked to enter again a correct input. 
 
