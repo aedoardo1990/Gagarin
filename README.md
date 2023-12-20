@@ -63,14 +63,16 @@ Red color is used as well for the 2 ASCII art images at the start of the quiz, f
 
 Red Star - Quiz Title
 
-![Red Star - Quiz Title](assets/images/readme/title_red_star.png)
+<img src="assets/images/readme/title_red_star.png" height="70" width="575">
 
 Red Star on top of the Kremlin in Moscow
 
-![Red Star Kremlin](assets/images/readme/red_star_kremlin.jpg)
+<img src="assets/images/readme/red_star_kremlin.jpg" height="" width="575">
 
 - In the second ASCII ART image there is Yuri Gagarin. By achieving the major milestone to be the first cosmonaut in space for Soviet Union amidst the Space Race, he became an international celebrity and was awarded many medals and titles, including the nation's highest distinction: Hero of the Soviet Union.
-FOTO TO UPLOAD
+
+<img src="assets/images/readme/intro_image_2.png" height="350" width="575">
+
 - The favicon is another well known symbol of Soviet Union, which is the hammer and the sieckle. It represents the proletarian solidarity between agricultural and industrial workers. It was first adopted during the Russian Revolution at the end of World War I, the hammer representing workers and the sickle representing the peasants.
 
 <img src="assets/images/favicon.jpeg" height="140" width="150">
@@ -78,7 +80,7 @@ FOTO TO UPLOAD
 ### Typography 
 
 - The font chosen for the title "Soviet Union Quiz" is "Russo One". Russo One was chosen because it is a Unicode typeface family that supports languages that use the Cyrillic, Baltic, Turkish, Central Europe, Latin script and its variants. 
-FOTO TO UPLOAD
+
 - The font chosen for the first ASCII image is Buran. The font is dedicated to the memory of the Soviet Space Shuttle named Buran - for more information click <a href="https://en.wikipedia.org/wiki/Buran_%28spacecraft%29" target="_blank" rel="noopener" aria-label="Check the Buran page of Wikipedia">here</a>. 
 Source of the font is https://www.dafont.com/buran-ussr.font
 
