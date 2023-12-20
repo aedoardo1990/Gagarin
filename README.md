@@ -141,22 +141,31 @@ The programm aims at providing the user with a simple and intuive multiple choic
 
 ## Deployment
 
-This project was deployed with Heroku using Code Institute's mock terminal as provided with the Python Essentials template.
+The site was deployed via [Heroku](https://dashboard.heroku.com/apps), and the live link can be found here: [Soviet Union Quiz](https://soviet-union-8544d8a31c4f.herokuapp.com/)
 
-To deploy:
+Before deploying to Heroku pip3 freeze > requirements.txt was used to add all the dependencies required to the requirements.txt file. This is required for the game to run on Heroku.
 
-- Clone or fork this public repository
-- Create a Heroku account (if not already existing)
-- Create a new app with Heroku
-- In **Settings**, add 2 buildpacks:
-    - ```Python```
-    - ```NodeJS```
-    
-    Ensure the buildpacks are created in that order!
+The following steps were then taken:
+1. Log in to [Heroku](https://dashboard.heroku.com/apps) or create an account.
+2. On the main page click the button labelled New in the top right corner and from the drop-down menu select "Create New App".
+3. Enter a unique and meaningful app name.
+4. Next select your region.
+5. Click on the Create App button.
+6. Click on the Settings Tab and scroll down to Config Vars.
+7. Click Reveal Config Vars and enter port into the Key box and 8000 into the Value box and click the Add button.
+8. Input CREDS and the content of your Google Sheet API creds file as another config var and click add.
+9. In the next Key box enter OXFORD_API_APP_ID and add your unique ID to the value box. 
+10. In the next Key box enter OXFORD_API_APP_KEY and add your unique key to the value box. 
+11. Next, scroll down to the Buildpack section click Add Buildpack select Python and click Save Changes
+12. Repeat step 11 to add node.js. Note: The Buildpacks must be in the correct order. If not click and drag them to move into the correct order.
+13. Scroll to the top of the page and choose the Deploy tab.
+14. Select Github as the deployment method.
+15. Confirm you want to connect to GitHub.
+16. Search for the repository name and click the connect button.
+17. Scroll to the bottom of the deploy page and either click Enable Automatic Deploys for automatic deploys or Deploy Branch to deploy manually. Manually deployed branches will need re-deploying each time the repo is updated.
+18. Click View to view the deployed site.
 
-- Allowing Heroku access to GitHub, link the new app to the relevant repository
-- Choose whether or not to enable **Automatic Deploys**. If enabled, the deployed app will update automatically with each push to GitHub
-- Click **Deploy**
+The site is now live and operational.
 
 
 
