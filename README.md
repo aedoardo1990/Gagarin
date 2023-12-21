@@ -280,7 +280,7 @@ Adding a personalizes congratulation message if the user gets the highest possib
 
 #### Python Validator 
 
-The programm was checked with CI Python Linter Validator - https://pep8ci.herokuapp.com/. No error were found as per the following screenshot.
+The programm was checked with CI Python Linter Validator - https://pep8ci.herokuapp.com/. In Python Validator there is just a small issue related to lines. The line of code was longer than 80 characters, but I was not able to shorten it because it contains as well the code to generate the headers of the leaderboard. Therefore I decide to split the line into two.
 
 <img src="assets/images/readme/python-validator.png" height="350" width="575">
 
@@ -362,7 +362,7 @@ Safari bug
 
 When I decided to restart the game, everything worked fine except the printing of the second score in the leaderboard (if the score would be among the 10 best). The game should have printed the same username entered before starting the game the 1st time (there is no option to change username for the restart game) and update the table with the new score of the 2nd game if among the 10 best. This should have not overrided the score of the 1st game, but be simply listed in the table as same username + new score on top of the previous score (if both among the 10 best scores). The bug was that at the end of the restart game the table was updated with a doubled entry of the score of the first game. 
 
-To solve the issue I pasted the 2 below code lines at the end of the run.py file into the restart function. Then the programm the leaderboard worked as expected. 
+To solve the issue I created a main function at the end of the file to wrap up the functions related to the leaderboard and points counting and pasted the function in the restart_game function.
 
 
 ### Unfixed bugs
