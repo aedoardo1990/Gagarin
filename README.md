@@ -275,7 +275,7 @@ Adding a personalizes congratulation message if the user gets the highest possib
 
 #### Python Validator 
 
-The programm was checked with ![CI Python Linter Validator](https://pep8ci.herokuapp.com/). No error were found as per the following screenshot.
+The programm was checked with CI Python Linter Validator - https://pep8ci.herokuapp.com/. No error were found as per the following screenshot.
 
 <img src="assets/images/readme/python-validator.png" height="350" width="575">
 
