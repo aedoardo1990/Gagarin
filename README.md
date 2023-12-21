@@ -26,13 +26,8 @@ The link to our Live Website can be found here - [Soviet Union Quiz](https://sov
     - [Testing User Stories](#testing-user-stories-functionality)
 - [Unfixed bugs](#unfixed-bugs)
 - [Technologies used](#technologies-used)
-    - [Languages](#languages)
-    - [Python Libraries](#python-libraries)
-    - [Programs used](#programs-used)
 - [Deployment](#deployment)
 - [Credits](#credits)
-    - [Media](#media)
-    - [Code used](#code-used)
 - [Acknowledgements](#acknowledgements)
 
 
