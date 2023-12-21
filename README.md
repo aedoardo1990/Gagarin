@@ -280,7 +280,7 @@ Adding a personalizes congratulation message if the user gets the highest possib
 
 #### Python Validator 
 
-The programm was checked with CI Python Linter Validator - https://pep8ci.herokuapp.com/. In Python Validator there is just a small issue related to length of a line. The line of code was longer than 80 characters, but I was not able to shorten it because it contains as well the code to generate the headers of the leaderboard. Therefore I decide to split the line into two.
+The programm was checked with CI Python Linter Validator - https://pep8ci.herokuapp.com/. In Python Validator there is just a small issue related to the length of a line. The line of code was longer than 80 characters, but I was not able to shorten it because it contains as well the code to generate the headers of the leaderboard. Therefore I decide to split the line into two.
 
 <img src="assets/images/readme/python-validator.png" height="350" width="575">
 
