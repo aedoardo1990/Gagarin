@@ -316,10 +316,9 @@ def leaderboard():
     def size(dat):
         return str(dat[1])
 
-    score.sort(key=size, reverse=True)
-
-    table = tabulate(score[0:11], headers=['Comrade name', 'Comrade score'],
-    tablefmt='fancy_grid', stralign='center')
+    score.sort(key=get_score, reverse=True)
+    
+    table = tabulate(score[0:11], tablefmt='fancy_grid', stralign='center')
     colored_table = red(table)
 
     print(colored_table)
