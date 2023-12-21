@@ -107,7 +107,7 @@ The programm aims at providing the user with a simple and intuive multiple choic
 - have time to read the additional information and choose when to proceed with the next question
 - get an error message if the input to the just mentioned option was incorrect
 - get a total score of my points at the end of the game
-- get displayed a leaderboard at the end of the game to see hpw my score ranks compared to other players
+- get displayed a leaderboard at the end of the game to see how my score ranks compared to other players
 - get the option at end of the game to play again
 - play again without the need to read again the instructions
 - repeat the game as many times as I wish
@@ -161,14 +161,14 @@ After the username is submitted, the user will be given the option to read or no
 
 - If N is entered, the instructions will not be displayed and the programm will bring the user directly to the first question.
 
-- If the user enters another letter, symbol or number than Y/N, the programm will display an error message and prompt the user to enter the correct input. 
+- If the user enters a letter, symbol or number different than Y/N, the programm will display an error message and prompt the user to enter the correct input. 
 
 <img src="assets/images/readme/instructions-invalid.png" height="350" width="575">
 
 
 #### Quiz questions
 For each question the user will be given the option to select among A), B), C) or H):
-- H stands for Hint: by entering H the user will receive a hint that will help him to answer to the question. After the Hint is given, the player will be asked again to select among A), B), C) or H). If H is selected again, the H will re-appear.
+- H stands for Hint: by entering H the user will receive a hint that will help him to answer to the question. After the Hint is given, the player will be asked again to select among A), B), C) or H). If H is selected again, the hint will re-appear.
 
 <img src="assets/images/readme/hint.png" height="350" width="575">
 
@@ -246,14 +246,14 @@ As above mentioned, when a question in the quiz is answered, the user has the op
 
 #### Randomize the questions
 
-For future developments of the programm, we would like to randomize the questions answers, so that the quiz would become more challenging for the user that wants to repeat it. 
+For future developments of the programm, we would like to randomize the questions answers, so that the quiz would become more challenging for the user that want to repeat it. 
 
 For instance the answers sections of the second question ("How many countries were part of Soviet Union?") is structured as follows:
 A) 17
 B) 15
 C) 13
 
-With the randomization, we could have for instance the following options when the quiz is running one or multiple times: A) 15, B)13, C)17 
+With the randomization, we could have the following options when the quiz would be running one or multiple times in a row: A) 15, B)13, C)17 
 or 
 A) 13, B) 17, C) 15
 
@@ -263,7 +263,7 @@ It would be nice to add different levels of difficulty to choose from at the sta
 
 #### Music toggle
 
-It would be nice to add a music toggle with the Anthem of Soviet Union or other famous Soviet songs, that the player could decide to switch on/off. This would help to recreate the atmosphere of the past glory of USSR.
+It would be nice to add a music toggle with the Anthem of Soviet Union or other famous Soviet songs, that the player could decide to switch on/off. This would allow to recreate the atmosphere of the past glory of USSR.
 
 #### Background image
 
@@ -311,9 +311,9 @@ As SEO was not an objective of this particular project, I chose to be content wi
 
 ### Browser Testing
 
-The Website was tested on Google Chrome, Microsoft Edge, Safari, and Firefox with no issues. It works very well and with no issues on Google and Microsoft Edge. 
+The Website was tested on Google Chrome, Microsoft Edge, Firefox and Safari. It works very well and with no issues on Google Chrome and Microsoft Edge. 
 
-On Firefox the programm works very well, but emojis are not displayed fully. 
+On Firefox the programm works pretty well, but emojis are not displayed fully. 
 
 Red star emoji - Firefox
 
@@ -350,7 +350,7 @@ Safari bug
 | get a total score of my points at the end of the game | get a score of my points at the end of the quiz |
 | get a leaderboard at the end of the game to see how my score ranks compared to other players | get a leaderboard at the end of the quiz where I can see how my performance ranks among all previous players |
 | get the option at end of the game to play again | have the option to play again at the end of the quiz |
-| play again without the need to read again the instructions | don't get the option to read again the instructions when I decide to play again |
+| play again without the need to read again the instructions | don't get the option to read again the instructions when I decide to repeat the game |
 | repeat the game as many times as I wish | can repeat the game endlessly |
 | have the choice to quit the game after finishing it | can quit the game after replying to all the questions |
 | get a good-bye message when quitting the game | get a good-bye message when I choose to quit the game |
@@ -385,12 +385,12 @@ As mentioned in the browser testing, the programm on Safari does not allow to in
 ### Programs used
 
 - [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - for testing responsivness, development of the website and lighthouse testing
-- [Google Fonts](https://fonts.google.com/) - for the fonts to the website
+- [Google Fonts](https://fonts.google.com/) - for the fonts of the website
 - [Lucidchart](https://lucidchart.com/) - to create the diagram for conceiving the project
 - [Picsart](https://tools.picsart.com/) - for the emojis of the red star and of the incorrect answer
 - [TwichQuotes](https://www.twitchquotes.com/ascii-art-generator) - to generate the 2 ASCII Art Images
 - [ImageOnline](https://crop-circle.imageonline.co/) - to crop as a circle the favicon logo
-- [Imgur](https://imgur.com/) - to host the favicon logo on a website (otherwise it would have been not possible to display the favicon)
+- [Imgur](https://imgur.com/) - to host the favicon logo on a website (otherwise it would have not been possible to display the favicon)
 
 
 ## Deployment
@@ -426,13 +426,13 @@ The site is now live and operational.
 
 ### Media
 - [Pinterest](https://www.pinterest.it/) - for the photo of Yuri Gagarin and the logo of the favicon
-- [Wikipedia](https://www.wikipedia.org/) - to all the facts and knowledge about Soviet Union in the quiz
+- [Wikipedia](https://www.wikipedia.org/) - for all the facts and knowledge about Soviet Union in the quiz
 
 
 ### Code used
 - This project was studied in-depth as model for the Quiz game and the theme of space travel - [space-quiz of Boiann](https://github.com/Boiann/space-quiz/tree/main)
 - Inspiration for the Quiz game - [3rd_Project_Quiz_Game of mikyrenato](https://github.com/mikyrenato/3rd_Project_Quiz_Game)
-- To understand how to install the emoticon - [harry-potter-adventure-game of AlexaH88](https://github.com/AlexaH88/harry-potter-adventure-game/tree/main)
+- To understand how to install the favicon - [harry-potter-adventure-game of AlexaH88](https://github.com/AlexaH88/harry-potter-adventure-game/tree/main)
 - Inspiration for the readme - [CI-PP3_hangman of Kathrin-ddggxh](https://github.com/Kathrin-ddggxh/CI-PP3_hangman/tree/main?tab=readme-ov-file#features)
 - Inspiration for the diagram - [word-Py of AliOKeeffe](https://github.com/AliOKeeffe/word-Py/tree/main)
 - Code in-depth study - [Stack overflow](https://stackoverflow.com/)
