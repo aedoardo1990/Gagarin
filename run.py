@@ -54,7 +54,7 @@ questions = {
     question[11][0]: 'B',
     question[12][0]: 'A',
     question[13][0]: 'B',
-    question[14][0]: 'C',
+    question[14][0]: 'C'
 }
 
 # map answers from Google Sheet - list of lists
@@ -319,7 +319,7 @@ def leaderboard():
     score.sort(key=size, reverse=True)
     # credits to https://stackoverflow.com/questions/76734963/colorama-not
     # -working-with-tabulate-to-display-colored-output-in-python
-    table = tabulate(score[0:11], headers=['COMRADE NAME', 'COMRADE SCORE'], 
+    table = tabulate(score[0:11], headers=['COMRADE NAME', 'COMRADE SCORE'],
     tablefmt='fancy_grid', stralign='center')
     colored_table = red(table)
 
@@ -339,7 +339,8 @@ def restart_game():
             delprint("\nхорошо, поиграем еще!\n")
             sleep(2)
             clear()
-            start_quiz()
+            enter_scores = start_quiz()
+            correct_answers = [str(username), int(enter_scores)]
             points_counter(correct_answers)
             leaderboard()
         elif restart == "N":

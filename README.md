@@ -223,7 +223,7 @@ The leaderboard was created using Google Sheets. The spreadsheet is accessed by 
 
 #### Repeat game option
 After the leaderboard has appeared, the user will be given the option to choose if to restart or not the game:
-- If the player enters Y, the game restarts. This time the instructions will be not displayed and the user will start the game directly from the 1st question. 
+- If the player enters Y, the game restarts. This time the instructions will be not displayed and the user will start the game directly from the 1st question. Before the new game loads, the phrase in Russian "хорошо, поиграем еще!" will be displayed. It means, "Ok, let's play again!".
 
 - If the player enters N, the game finishes and the following good-bye message will appear.
 
@@ -362,6 +362,8 @@ Safari bug
 As mentioned in the browser testing, the programm on Safari does not allow to input the username, therefore it is not possible to continue with the rest of the game. 
 
 <img src="assets/images/readme/safari-bug.png" height="350" width="575">
+
+####
 
 
 ## Technologies used
