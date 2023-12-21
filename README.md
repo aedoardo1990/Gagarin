@@ -19,20 +19,21 @@ The link to our Live Website can be found here - [Soviet Union Quiz](https://sov
     - [User Stories](#user-stories)
 - [Features](#features)
     - [Existing Features](#existing-features)
-    - [Future Features](#possible-future-features)
-- [Data Model](#data-model)
+    - [Future Features](#future-features)
 - [Testing](#testing)
     - [Validator Testing](#validator-testing)
     - [Browser Testing](#browser-testing)
     - [Testing User Stories](#testing-user-stories-functionality)
-- [Debugging](#debugging)
-    - [Fixed bugs](#fixed-bugs)
-    - [Unfixed bugs](#unfixed-bugs)
+- [Unfixed bugs](#unfixed-bugs)
+- [Technologies used](#technologies-used)
+    -[Languages](#languages)
+    -[Python Libraries](#python-libraries)
+    -[Programs used](#programs-used)
 - [Deployment](#deployment)
 - [Credits](#credits)
-    - [Data](#data)
-    - [Code](#code)
-    - [Styling](#styling)
+    -[Media](#media)
+    -[Code used](#code-used)
+- [Acknowledgments](#acknowledgments)
 
 
 ## Planning
@@ -445,7 +446,7 @@ The site is now live and operational.
 
 My mentor, for his great support and for being a polar-star during my project. 
 
-My wife (who is Russian), for the years spent with her allowed me to fall in love with slavic culture and world.
+My wife (who is Russian), for the years spent with her allowed me to fall in love with the Slavic culture and world.
 
 Kay of Code Institute and the Slack Community
 
