@@ -356,6 +356,15 @@ Safari bug
 | get a good-bye message when quitting the game | get a good-bye message when I choose to quit the game |
 
 
+### Fixed bugs 
+
+#### Leaderboard not printing correctly the result of the restart game
+
+When I decided to restart the game, everything worked fine except the printing of the second score in the leaderboard (if the score would be among the 10 best). The game should have printed the same username entered before starting the game the 1st time (there is no option to change username for the restart game) and update the table with the new score of the 2nd game if among the 10 best. This should have not overrided the score of the 1st game, but be simply listed in the table as same username + new score on top of the previous score (if both among the 10 best scores). The bug was that at the end of the restart game the table was updated with a doubled entry of the score of the first game. 
+
+To solve the issue I pasted the 2 below code lines at the end of the run.py file into the restart function. Then the programm the leaderboard worked as expected. 
+
+
 ### Unfixed bugs
 
 #### Username input in Safari not working 
