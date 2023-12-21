@@ -339,10 +339,7 @@ def restart_game():
             delprint("\nхорошо, поиграем еще!\n")
             sleep(2)
             clear()
-            enter_scores = start_quiz()
-            correct_answers = [str(username), int(enter_scores)]
-            points_counter(correct_answers)
-            leaderboard()
+            main()
         elif restart == "N":
             delprint("\nIt was nice having you among our comrades!")
             delprint("\nHave a good day and a good life.\n")
@@ -351,9 +348,11 @@ def restart_game():
             print("\n" + inv_input_2 + "\n")
             continue
 
+def main():
+    enter_scores = start_quiz()
+    correct_answers = [str(username), int(enter_scores)]
+    points_counter(correct_answers)
+    leaderboard()
 
-enter_scores = start_quiz()
-correct_answers = [str(username), int(enter_scores)]
-points_counter(correct_answers)
-leaderboard()
+main()
 restart_game()
