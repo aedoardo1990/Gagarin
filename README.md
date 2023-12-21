@@ -26,14 +26,14 @@ The link to our Live Website can be found here - [Soviet Union Quiz](https://sov
     - [Testing User Stories](#testing-user-stories-functionality)
 - [Unfixed bugs](#unfixed-bugs)
 - [Technologies used](#technologies-used)
-    -[Languages](#languages)
-    -[Python Libraries](#python-libraries)
-    -[Programs used](#programs-used)
+    - [Languages](#languages)
+    - [Python Libraries](#python-libraries)
+    - [Programs used](#programs-used)
 - [Deployment](#deployment)
 - [Credits](#credits)
-    -[Media](#media)
-    -[Code used](#code-used)
-- [Acknowledgments](#acknowledgments)
+    - [Media](#media)
+    - [Code used](#code-used)
+- [Acknowledgements](#acknowledgements)
 
 
 ## Planning
@@ -58,6 +58,7 @@ Different colors are used to categorize different types of messages displayed to
 
 Red color is used as well for the 2 ASCII art images at the start of the quiz, for the leaderboard at the end and for the red star (present in the header of the quiz, in the first text based screen of the programm and in the instructions). The choice of red as the predominant color aims at recalling the color of the flag of Soviet Union. 
 
+
 ### Imagery
 
 - The red star is one of the most famous symbols of USSR - its meaning is explained in one of the questions of the quiz, therefore no spoilers will be done here. Still today in Moscow, there are some state buildings with the red star on top.
@@ -78,6 +79,7 @@ Red Star on top of the Kremlin in Moscow
 
 <img src="assets/images/favicon.jpeg" height="140" width="150">
 
+
 ### Typography 
 
 - The font chosen for the title "Soviet Union Quiz" is "Russo One". Russo One was chosen because it is a Unicode typeface family that supports languages that use the Cyrillic, Baltic, Turkish, Central Europe, Latin script and its variants. 
@@ -94,7 +96,7 @@ The programm aims at providing the user with a simple and intuive multiple choic
 
 ### User Stories
 
-####As a user I want to:####
+#### As a user I want to:
 
 - have an intro image to get into the atmosphere of Soviet Union 
 - be able to read a short introduction about the quiz when it first loads 
