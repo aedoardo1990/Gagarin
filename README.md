@@ -146,7 +146,7 @@ When the player will have submitted a username, he will get the below text in Ru
 
 <img src="assets/images/readme/tovarish.png" height="150" width="575">
 
-nпривет, товарищ means "Hello, comrade". In the early years of Soviet power, the Bolsheviks used товарищ ( pronounced "Tovarisch") when addressing to people assumed sympathetic to the revolution and to the Soviet state, such as members of the Communist party and people from the "working masses". By the mid-1920s, the form of address Tovarisch became so commonplace in the Soviet Union that it was used indiscriminately in essentially the same way as terms like "Mister" and "Sir" are employed in English. That use persisted until the dissolution of the Soviet Union.
+привет, товарищ means "Hello, comrade". In the early years of Soviet power, the Bolsheviks used товарищ ( pronounced "Tovarisch") when addressing to people assumed sympathetic to the revolution and to the Soviet state, such as members of the Communist party and people from the "working masses". By the mid-1920s, the form of address Tovarisch became so commonplace in the Soviet Union that it was used indiscriminately in essentially the same way as terms like "Mister" and "Sir" are employed in English. That use persisted until the dissolution of the Soviet Union.
 
 The username entered by the user has to consist of numbers or letters. They can't enter a blank space. If they don't enter valid data, an error message will appear asking to submit a valid username.
 
