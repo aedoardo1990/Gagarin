@@ -7,7 +7,7 @@ The game is a Python command-line terminal quiz, which runs in the Code Institut
 
 The link to our Live Website can be found here - [Soviet Union Quiz](https://soviet-union-8544d8a31c4f.herokuapp.com/).
 
-![Responsive Mockup](assets/images/readme/mockup_1.png)
+![Responsive Mockup](assets/images/readme/mockup-1.png)
 
 
 ## Index - Table of Contents
@@ -63,15 +63,15 @@ Red color is used as well for the 2 ASCII art images at the start of the quiz, f
 
 Red Star - Quiz Title
 
-<img src="assets/images/readme/title_red_star.png" height="70" width="575">
+<img src="assets/images/readme/title-red-star.png" height="70" width="575">
 
 Red Star on top of the Kremlin in Moscow
 
-<img src="assets/images/readme/red_star_kremlin.jpg" height="" width="575">
+<img src="assets/images/readme/red-star-kremlin.jpg" height="" width="575">
 
 - In the second ASCII ART image there is Yuri Gagarin. By achieving the major milestone to be the first cosmonaut in space for Soviet Union amidst the Space Race, he became an international celebrity and was awarded many medals and titles, including the nation's highest distinction: Hero of the Soviet Union.
 
-<img src="assets/images/readme/intro_image_2.png" height="350" width="575">
+<img src="assets/images/readme/intro-image-2.png" height="350" width="575">
 
 - The favicon is another well known symbol of Soviet Union, which is the hammer and the sieckle. It represents the proletarian solidarity between agricultural and industrial workers. It was first adopted during the Russian Revolution at the end of World War I, the hammer representing workers and the sickle representing the peasants.
 
@@ -131,11 +131,11 @@ The programm aims at providing the user with a simple and intuive multiple choic
 
 1. Intro Image 
 
-<img src="assets/images/readme/intro_image_1.png" height="350" width="575">
+<img src="assets/images/readme/intro-image-1.png" height="350" width="575">
 
 2. Gagarin Image 
 
-<img src="assets/images/readme/intro_image_2.png" height="350" width="575">
+<img src="assets/images/readme/intro-image-2.png" height="350" width="575">
 
 
 **Introduction to the game and requirement to enter username**
@@ -148,7 +148,7 @@ When the player will have submitted a username, he will get the below text in Ru
 
 <img src="assets/images/readme/tovarish.png" height="150" width="575">
 
-nпривет, товарищ () means "Hello, comrade". If you want to know how to pronounce it, please click <a href="https://www.google.com/search?q=translator&rlz=1C1ONGR_itDE1079DE1079&oq=tr&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIGCAEQRRg5MggIAhBFGCcYOzIGCAMQRRg8MgYIBBBFGDwyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQgxMDA5ajBqOagCALACAA&sourceid=chrome&ie=UTF-8" target="_blank" rel="noopener" aria-label="Check the pronunciation of nпривет, товарищ ">here</a>. In the early years of Soviet power, the Bolsheviks used Tovarisch when addressing to people assumed sympathetic to the revolution and to the Soviet state, such as members of the Communist party and people from the "working masses". By the mid-1920s, the form of address Tovarisch became so commonplace in the Soviet Union that it was used indiscriminately in essentially the same way as terms like "Mister" and "Sir" are employed in English. That use persisted until the dissolution of the Soviet Union.
+nпривет, товарищ means "Hello, comrade". If you want to know how to pronounce it, please click <a href="https://www.google.com/search?q=translator&rlz=1C1ONGR_itDE1079DE1079&oq=tr&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIGCAEQRRg5MggIAhBFGCcYOzIGCAMQRRg8MgYIBBBFGDwyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQgxMDA5ajBqOagCALACAA&sourceid=chrome&ie=UTF-8" target="_blank" rel="noopener" aria-label="Check the pronunciation of nпривет, товарищ ">here</a>. In the early years of Soviet power, the Bolsheviks used Tovarisch when addressing to people assumed sympathetic to the revolution and to the Soviet state, such as members of the Communist party and people from the "working masses". By the mid-1920s, the form of address Tovarisch became so commonplace in the Soviet Union that it was used indiscriminately in essentially the same way as terms like "Mister" and "Sir" are employed in English. That use persisted until the dissolution of the Soviet Union.
 
 The username entered by the user has to consist of numbers or letters. They can't enter a blank space. If they don't enter valid data, an error message will appear asking to submit a valid username.
 
@@ -271,6 +271,61 @@ Adding a personalizes congratulation message if the user gets the highest possib
 
 ## Testing
 
+### Validator Testing
+
+#### Python Validator 
+
+The programm was checked with ![CI Python Linter Validator](https://pep8ci.herokuapp.com/). No error were found as per the following screenshot.
+
+<img src="assets/images/readme/python-validator.png" height="350" width="575">
+
+#### HTML Validator
+
+I added a few modifications to the HTML file to give a better design to the website. Modifications include:
+- header
+- button
+- footer
+
+After adding the above, I checked the HTML validator. No errors were found as per the below screenshot. 
+
+<img src="assets/images/readme/html-validator.png" height="350" width="575">
+
+#### CSS Validator 
+
+I added as well a few modifications to the CSS template to add some style to the HTML page. After that, I checked the CSS validator. No error were found except the warnings below. The first is is due to the imported Google fonts. The second and third should be related to the CSS template provided for the project. 
+
+<img src="assets/images/readme/css-validator.png" height="400" width="575">
+
+
+#### Lighthouse Testing
+
+As SEO was not an objective of this particular project, I chose to be content with a rating that is slightly below 90. 
+
+<img src="assets/images/readme/lighthouse-testing.png" height="350" width="575">
+
+
+### Browser Testing
+
+The Website was tested on Google Chrome, Microsoft Edge, Safari, and Firefox with no issues. It works very well and with no issues on Google and Microsoft Edge. 
+
+On Firefox the programm works very well, but emojis are not displayed fully. 
+
+Red star emoji - Firefox
+
+<img src="assets/images/readme/firefox.png" height="170" width="575">
+
+Incorrect answer emoji - Firefox
+
+<img src="assets/images/readme/firefox2.png" height="70" width="160">
+
+
+On Safari the programm does not allow to input the username, therefore it is not possible to continue with the rest of the game. 
+
+Safari bug 
+
+<img src="assets/images/readme/safari-bug.png" height="350" width="575">
+
+
 ### Testing User Stories (Functionality)
 
 | Expectation (As a user, I want to...)  | Result (As a user, I...)    |
@@ -300,9 +355,38 @@ Adding a personalizes congratulation message if the user gets the highest possib
 ### Unfixed bugs
 
 #### Username input in Safari not working 
-The programm on Safari does not allow to input the username, therefore it is not possible to continue with the rest of the game. 
+As mentioned in the browser testing, the programm on Safari does not allow to input the username, therefore it is not possible to continue with the rest of the game. 
 
-PHOTO TO UPLOAD
+<img src="assets/images/readme/safari-bug.png" height="350" width="575">
+
+
+## Technologies used
+
+### Languages
+- Python
+- HTML
+- CSS
+
+### Python Libraries:
+- [gspread](https://pypi.org/project/gspread/): to allow communication with Google Sheets
+- [google.oauth2.service_account](https://google-auth.readthedocs.io/en/stable/index.html):  used to validate credentials and grant access to google service accounts
+- [colorama](https://pypi.org/project/colorama/) - for adding colour to terminal text
+- [simple_colors](https://pypi.org/project/simple-colors/) - for adding colour to terminal text
+- [tabulate](https://pypi.org/project/tabulate/) - for printing the leaderboard
+- [os](https://docs.python.org/3/library/os.html?highlight=os#module-os) - to clear the terminal when beginning a new game
+- [time] - this library is installed by default in Python, therefore I did not need to download it.
+- [art](https://pypi.org/project/art/) - for creating ASCII art images
+- [sys] (https://pypi.org/project/os-sys/)
+
+### Programs used
+
+- [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - for testing responsivness, development of the website and lighthouse testing
+- [Google Fonts](https://fonts.google.com/) - for the fonts to the website
+- [Lucidchart](https://lucidchart.com/) - to create the diagram for conceiving the project
+- [Picsart](https://tools.picsart.com/) - for the emojis of the red star and of the incorrect answer
+- [TwichQuotes](https://www.twitchquotes.com/ascii-art-generator) - to generate the 2 ASCII Art Images
+- [ImageOnline](https://crop-circle.imageonline.co/) - to crop as a circle the favicon logo
+- [Imgur](https://imgur.com/) - to host the favicon logo on a website (otherwise it would have been not possible to display the favicon)
 
 
 ## Deployment
@@ -332,6 +416,35 @@ The following steps were then taken:
 18. Click View to view the deployed site.
 
 The site is now live and operational.
+
+
+## Credits
+
+### Media
+- [Pinterest](https://www.pinterest.it/) - for the photo of Yuri Gagarin and the logo of the favicon
+- [Wikipedia](https://www.wikipedia.org/) - to all the facts and knowledge about Soviet Union in the quiz
+
+
+### Code used
+- This project was studied in-depth as model for the Quiz game and the theme of space travel - [space-quiz of Boiann](https://github.com/Boiann/space-quiz/tree/main)
+- Inspiration for the Quiz game - [3rd_Project_Quiz_Game of mikyrenato](https://github.com/mikyrenato/3rd_Project_Quiz_Game)
+- To understand how to install the emoticon - [harry-potter-adventure-game of AlexaH88](https://github.com/AlexaH88/harry-potter-adventure-game/tree/main)
+- Inspiration for the readme - [CI-PP3_hangman of Kathrin-ddggxh](https://github.com/Kathrin-ddggxh/CI-PP3_hangman/tree/main?tab=readme-ov-file#features)
+- Inspiration for the diagram - [word-Py of AliOKeeffe](https://github.com/AliOKeeffe/word-Py/tree/main)
+- Code in-depth study - [Stack overflow](https://stackoverflow.com/)
+- Additional details about the sources of the code used are mentioned as comments in the run.py file
+
+
+## Acknowledgements
+
+My mentor, for his great support and for being a polar-star during my project. 
+
+My wife (who is Russian), for the years spent with her allowed me to fall in love with slavic culture and world.
+
+Kay of Code Institute and the Slack Community
+
+
+
 
 
 
