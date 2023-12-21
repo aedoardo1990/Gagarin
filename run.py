@@ -314,12 +314,13 @@ def leaderboard():
     score = comrade_scores.get_all_values()
 
     def size(dat):
-        return str(dat[1])
+        return int(dat[1])
 
-    score.sort(key=size, reverse=False)
+    score.sort(key=size, reverse=True)
     # credits to https://stackoverflow.com/questions/76734963/colorama-not
     # -working-with-tabulate-to-display-colored-output-in-python
-    table = tabulate(score[0:11], tablefmt='fancy_grid', stralign='center')
+    table = tabulate(score[0:11], headers=['COMRADE NAME', 'COMRADE SCORE'], 
+    tablefmt='fancy_grid', stralign='center')
     colored_table = red(table)
 
     print(colored_table)
